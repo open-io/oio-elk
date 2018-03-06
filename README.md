@@ -1,15 +1,31 @@
 
+Docker ELK + FILEBEAT+ OPENIO/SDS
+----------------------
+la version des containers utilisés:  
+- ELK : version 6.6.2   
+- Filebeat : Version 6.6.2  
+- Openio/sds: version 16.04  
 
-## Demarrer le container openio sds
-*  demarrage simple
+# Installation des paquets
+#### Installer docker
 
-`docker run -d -p 6007:6007 openio/sds`
-* démarrage en recupérant créant un volume pour les fichiers logs
+#### Installer docker-compose
 
-## Activer les logs au niveau du container
-`docker run -d -p 6007:6007 -v ~/logs:/tmp:logs openio/sds`
- ## créer un lien symnbolique
 
-`input(type="imuxsock" Socket="/dev/log" CreatePath="on")`
-A ajouter sous `$ModLoad imuxsock` dans `/etc/rsyslog.conf`
-Puis redémarrer les services avec `gridinit_cmd restart`
+# Démarrer le service
+
+#### Activer les logs dans le container openio/sds
+* Ajouter le socket /dev/log   
+``$ vi /etc/rsyslog.conf``
+
+  Ajoutez la ligne suivante juste après la ligne contenant  `$ModLoad imuxsock`   
+  `input(type="imuxsock" Socket="/dev/log" CreatePath="on")`
+
+*  Puis redémarrer les services avec
+ `$ gridinit_cmd restart`
+
+#### Lancement des containers
+* En mode verbose   
+`$ docker-compose up`
+* En arrière plan  
+`$ docker-compose up -d `
