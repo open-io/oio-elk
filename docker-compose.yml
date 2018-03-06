@@ -23,7 +23,7 @@ services:
       build:
         context: ./filebeat
       volumes:
-        - ./filebeat/config/filebeat.yml:/filebeat.yml:ro
+        - ./filebeat/config/filebeat.yml:/filebeat.yml
         - data-log:/var/log/OPENIO
   #openio-sds:
   #  image: openio/sds
