@@ -1,0 +1,37 @@
+# ELK version 6.2.2
+version: '3'
+services:
+  elk:
+    build:
+     context: ./elk
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+      - "9300:9300"
+      - "5044:5044"
+    volumes:
+      - "./elk/elasticsearch/data:/var/lib/elasticsearch"
+      - "./elk/elasticsearch/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml"
+      - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
+      - "./elk/kibana/config/Kibana.yml:/opt/kibana/config"
+      - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
+      - "./elk/logstash/conf.d:/etc/logstash/conf.d"
+      #- ./elk/logstash/pipeline:/usr/share/logstash/pipeline: ro
+    #environment:
+    #  - LS_JAVA_OPTS: "-Xmx512m -Xms2g"
+  filebeat:
+      build:
+        context: ./filebeat
+      volumes:
+        - ./filebeat/config/filebeat.yml:/filebeat.yml:ro
+        - data-log:/var/log/OPENIO
+  #openio-sds:
+  #  image: openio/sds
+  #  ports:
+  #   - "6007:6007"
+  #  volume:
+  #   - data-log:/var/log/oio/sds/OPENIO
+#volumes:
+#  data-log:
+#    - type:
+#      source:./openio/log/oio/sds/OPENIO

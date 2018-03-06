@@ -1,0 +1,32 @@
+#Filebeat version 6.6.2
+#log inptut
+#output logstash
+#integration de  modules
+#
+#-----------------------------Filebeat input --------------------------------
+
+filebeat.prospectors:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/oio/sds/OPENIO/*.log
+#----------------------------- Logstash output --------------------------------
+output.logstash:
+  hosts: ["127.0.0.1:5044"]
+  #send data with the specific format with codecs
+  codec.format :
+    string:  '%{[@timestamp]} %{[@message]}'
+
+  # Optional SSL. By default is off.
+  # List of root certificates for HTTPS server verifications
+  #ssl.certificate_authorities: ["/etc/pki/root/ca.pem"]
+
+  # Certificate for SSL client authentication
+  #ssl.certificate: "/etc/pki/client/cert.pem"
+
+  # Client Certificate Key
+  #ssl.key: "/etc/pki/client/cert.key"
+#----------------------------- Enable kibana dashboard for  --------------------------------
+
+#setup.kibana:
+#  host: "localhost:5601
