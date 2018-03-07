@@ -1,1 +1,2 @@
-elk/elasticsearch/data
+elk/elasticsearch/data/*
+openio/log/*
