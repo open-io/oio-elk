@@ -16,7 +16,7 @@ Au niveau de la stack ELK composée de **Elasticsearch**  **Logstash** et **Kiba
 Kibana  va permettre de consulter les données de la base Elasticsearch et d’en construire les graphes du dashboard.
 
 
-#### Besoins
+#### Éxigence
  [Installer docker](https://docs.docker.com/install/)   
  [Installer docker-compose ](https://docs.docker.com/compose/install/)
 
@@ -40,7 +40,7 @@ sudo find openio/log/ -type d -exec chmod 777 {} \;
 sudo find openio/log/ -type f -exec chmod 777 {} \;
 ```
 
-#### Lancer des containers
+#### Lancer les services
 * En mode verbose   
 ```
 $ docker-compose up
@@ -49,7 +49,10 @@ $ docker-compose up
 ```
 $ docker-compose up -d
 ```
-
+#### Arrêter les services  
+```
+$ docker-compose stop
+```
 --------------
 ## Quelques erreurs rencontrées fréquemment
 
@@ -61,7 +64,7 @@ La commande suivante permet d'augmenter cette mémoire virtuelle.
 ```
 $ sudo sysctl -w vm.max_map_count=262144
 ```
-### 2. Problème de droit de filebeat.yml
+#### 2. Problème de droit de filebeat.yml
 `Exiting: error loading config file: config file ("filebeat.yml") must be owned by the beat user (uid=0) or root`
 
 
@@ -69,13 +72,13 @@ $ sudo sysctl -w vm.max_map_count=262144
 $ chmod go-w chemin_vers/filebeat.yml
 ```
 
-### 3. Problème de droit du répetoire contenant les fichiers logs
+#### 3. Problème de droit du répetoire contenant les fichiers logs
 `TODO`
 
 ```
 $ chmod -R 777 chemin_du répertoire
 ```
-
+-------------------------------
 #### Activer les logs dans le container openio/sds
 * Ajouter le socket /dev/log   
 ```
