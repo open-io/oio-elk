@@ -17,21 +17,29 @@ services:
       - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
       - "./elk/logstash/conf.d:/etc/logstash/conf.d"
       #- ./elk/logstash/pipeline:/usr/share/logstash/pipeline: ro
+    restart: always
     #environment:
     #  - LS_JAVA_OPTS: "-Xmx512m -Xms2g"
   filebeat:
       build:
         context: ./filebeat
       volumes:
-        - ./filebeat/config/filebeat.yml:/filebeat.yml
-        - data-log:/var/log/OPENIO
-  #openio-sds:
-  #  image: openio/sds
-  #  ports:
-  #   - "6007:6007"
-  #  volume:
-  #   - data-log:/var/log/oio/sds/OPENIO
-#volumes:
-#  data-log:
-#    - type:
-#      source:./openio/log/oio/sds/OPENIO
+        - "./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml"
+        - "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
+        - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
+      restart: always
+
+  openio-sds:
+    build:
+      context: ./openio
+    ports:
+     - "6007:6007"
+    volumes:
+     - "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
+     - "./openio/etc/rsyslog.conf:/etc/rsyslog.conf"
+    restart: always
+# volumes:
+#   - type: bind
+#     name: data-log
+#     source: ./openio/log/oio/sds/OPENIO
+#  data-log: ./openio/log/oio/sds/OPENIO
