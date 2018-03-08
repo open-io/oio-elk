@@ -18,6 +18,8 @@ services:
       - "./elk/logstash/conf.d:/etc/logstash/conf.d"
       #- ./elk/logstash/pipeline:/usr/share/logstash/pipeline: ro
     restart: always
+    networks:
+      - net
     #environment:
     #  - LS_JAVA_OPTS: "-Xmx512m -Xms2g"
   filebeat:
@@ -28,7 +30,9 @@ services:
         - "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
         - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
       restart: always
-
+      networks:
+        - net
+  
   openio-sds:
     build:
       context: ./openio
@@ -38,6 +42,11 @@ services:
      - "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
      - "./openio/etc/rsyslog.conf:/etc/rsyslog.conf"
     restart: always
+    networks:
+      - net
+networks:
+  net:
+    driver: bridge
 # volumes:
 #   - type: bind
 #     name: data-log

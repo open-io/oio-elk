@@ -37,7 +37,7 @@ Pour pouvoir partager le répertoire e log entre le container openio/sds et notr
 sudo find openio/log/ -type d -exec chmod 777 {} \;
 ```
 ```
-sudo find openio/log/ -type f -exec chmod 777 {} \;
+sudo find openio/log/ -type f -exec chmod 666 {} \;
 ```
 
 #### Lancer les services

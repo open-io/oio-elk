@@ -9,13 +9,16 @@ filebeat.prospectors:
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/*.log
+    - /var/log/oio/sds/OPENIO/rawx-0/rawx-0-httpd-access.log
+    #- /var/log/oio/sds/OPENIO/*/*.log
+  fields:
+    bazard: rawx-0-httpd-access
 #----------------------------- Logstash output --------------------------------
 output.logstash:
-  hosts: ["127.0.0.1:5044"]
+  hosts: ["192.168.1.43:5044"]
   #send data with the specific format with codecs
-  codec.format :
-    string:  '%{[@timestamp]} %{[@message]}'
+  #codec.format :
+  #  string:  '%{[@timestamp]} %{[@message]}'
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
