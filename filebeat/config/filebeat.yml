@@ -49,9 +49,9 @@ filebeat.prospectors:
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/conscience-0/conscience-0.log
+    - /var/log/oio/sds/OPENIO/conscienceagent-0/conscienceagent-0.log
   fields:
-    name_log: conscience-0
+    name_log: conscienceagent-0
 - type: log
   enabled: true
   paths:
