@@ -10,12 +10,12 @@ filebeat.prospectors:
     #- /var/log/oio/sds/OPENIO/*/*.log
   fields:
     name_log: rawx-0-httpd-access
-# - type: log
-#   enabled: true
-#   paths:
-#     - /var/log/oio/sds/OPENIO/rawx-0/rawx-0-httpd-errors.log
-#   fields:
-#     name_log: rawx-0-httpd-errors
+- type: log
+  enabled: true
+  paths:
+    - /var/log/oio/sds/OPENIO/*/*.access
+  fields:
+    name_log: access
 # - type: log
 #   enabled: true
 #   paths:
