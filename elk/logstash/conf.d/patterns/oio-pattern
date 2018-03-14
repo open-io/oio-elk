@@ -1,9 +1,12 @@
-INSTANCE_ID [0-9A-F]{15}
 INSTANCE_ID %{WORD},%{WORD:namespace},%{WORD:servicetype},%{NUMBER:num}
 USER_ID ([0-9A-F]{64}|-)
 SESSION_ID [0-9A-F]{32}
 PAYLOAD_ID /[0-9A-F]{64}
-
+ISO %{TIMESTAMP_ISO8601:log_timestamp}
+TIMESYS %{SYSLOGTIMESTAMP:log_timestamp}
+LOG_TIME (?:%{ISO}|%{TIMESYS})
+SEP :
+ACCESS_LOG %{LOG_TIME} %{SYSLOGHOST} %{INSTANCE_ID}%{SEP}? (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
 
 # Exemple de log access
 # Mar 07 16:13:53 2fe05818dd06.ec2.internal OIO,OPENIO,rawx,0 409 139690161817344 access INF 127.0.0.1:6004 127.0.0.1:59724 PUT 201 5725 5280
