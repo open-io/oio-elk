@@ -1,5 +1,5 @@
 # ======================== Elasticsearch Configuration =========================
-#
+# xpack.security.enabled: false
 # NOTE: Elasticsearch comes with reasonable defaults for most settings.
 #       Before you set out to tweak and tune the configuration, make sure you
 #       understand what are you trying to accomplish and the consequences.
@@ -11,10 +11,10 @@
 # https://www.elastic.co/guide/en/elasticsearch/reference/index.html
 #
 # ---------------------------------- X-PACK -----------------------------------
-action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
-
+#action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,logs-*,access-*
 # ---------------------------------- Cluster -----------------------------------
 #
+
 # Use a descriptive name for your cluster:
 #
 #cluster.name: my-application
