@@ -76,7 +76,7 @@ $ chmod go-w chemin_vers/filebeat.yml
 `TODO`
 
 ```
-$ chmod -R 777 chemin_du répertoire
+$ chmod -R 777 chemin_du_répertoire
 ```
 -------------------------------
 #### Activer les logs dans le container openio/sds

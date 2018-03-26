@@ -2,11 +2,11 @@ INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_TYPE:servicetype},%{NUMBER:num}
 USER_ID ([0-9A-F]{64}|-)
 SESSION_ID [0-9A-F]{32}
 SERVICE_TYPE [a-zA-Z0-9._-]+
-ISO %{TIMESTAMP_ISO8601:log_timestamp}
-TIMESYS %{SYSLOGTIMESTAMP:log_timestamp}
+ISO %{TIMESTAMP_ISO8601}
+TIMESYS %{SYSLOGTIMESTAMP}
 LOG_TIME (?:%{ISO}|%{TIMESYS})
 SEP :
-ACCESS_LOG %{LOG_TIME} %{SYSLOGHOST} %{INSTANCE_ID}%{SEP}? (%{LOGLEVEL:aaa}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
+ACCESS_LOG %{LOG_TIME:log_timestamp} %{SYSLOGHOST} %{INSTANCE_ID}%{SEP}? (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
 
 DEBUG_LOG %{TIMESTAMP_ISO8601:log_timestamp} %{SYSLOGHOST} %{INSTANCE_ID}: %{LOGLEVEL}  %{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{GREEDYDATA:payload}
 

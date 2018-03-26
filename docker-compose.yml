@@ -12,7 +12,6 @@ services:
     volumes:
       - "./elk/elasticsearch/data:/var/lib/elasticsearch"
       - "./elk/elasticsearch/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml"
-      #- "./elk/elasticsearch/config/elasticsearch.keystore:/etc/elasticsearch/elasticsearch.keystore"
       - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
       - "./elk/kibana/config:/opt/kibana/config"
       - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
@@ -21,16 +20,6 @@ services:
     restart: always
     networks:
       - net
-    # environment:
-    #   #- ELASTIC_BOOTSTRAP_PASSWORD=elastic
-    #   - ELASTICSEARCH_USER=elastic
-    #   - ELASTICSEARCH_PASSWORD=changeme
-    #   - KIBANA_USER=Kibana
-    #   - KIBANA_PASSWORD=changeme
-    #   - LOGSTASH_USER=logstash
-    #   - LOGSTASH_PASSWORD=changeme
-    #   - LOGSTASH_START=1
-    #   - KIBANA_START=1
   filebeat:
       build:
         context: ./filebeat
