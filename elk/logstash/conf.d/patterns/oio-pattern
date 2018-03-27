@@ -1,17 +1,31 @@
-INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_TYPE:servicetype},%{NUMBER:num}
+INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_NAME:servicetype},%{NUMBER:num}
 USER_ID ([0-9A-F]{64}|-)
 SESSION_ID [0-9A-F]{32}
-SERVICE_TYPE [a-zA-Z0-9._-]+
+SERVICE_NAME [a-zA-Z0-9._-]+
 ISO %{TIMESTAMP_ISO8601}
 TIMESYS %{SYSLOGTIMESTAMP}
 LOG_TIME (?:%{ISO}|%{TIMESYS})
-SEP :
-ACCESS_LOG %{LOG_TIME:log_timestamp} %{SYSLOGHOST} %{INSTANCE_ID}%{SEP}? (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
+SEPARATOR :
+OIO_HEADER %{LOG_TIME:log_timestamp} %{SYSLOGHOST} %{INSTANCE_ID}%{SEPARATOR}?
 
-DEBUG_LOG %{TIMESTAMP_ISO8601:log_timestamp} %{SYSLOGHOST} %{INSTANCE_ID}: %{LOGLEVEL}  %{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{GREEDYDATA:payload}
 
-SWIFT_LOG %{TIMESTAMP_ISO8601:log_timestamp} %{SYSLOGHOST} %{INSTANCE_ID}: %{LOGLEVEL}  %{DATE:date} {WORD:method} %{URL:url} %{WORD:http_version} %{NUMBER:return_code} - %{WORD:swift_client} - - - - %{GREEDYDATA:transaction_id} %{WORDK:UNKOWN }
+ACCESS_LOG %{OIO_HEADER} (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
 
-# Exemple de log access
-# Mar 07 16:13:53 2fe05818dd06.ec2.internal OIO,OPENIO,rawx,0 409 139690161817344 access INF 127.0.0.1:6004 127.0.0.1:59724 PUT 201 5725 5280
-# DB49A66D441FEF95DE860CCB48354310FA3C850913705991108D2213D58C69F9 020BDAFA3F31D502EE371252B7DD73F9 /D41930735DAE962982701ECF6418803B8CB99C68EF64F57E6DA30D75578006C1
+DEBUG_LOG %{OIO_HEADER} %{LOGLEVEL}  %{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{GREEDYDATA:payload}
+
+
+# Mapping of oioswift log
+# SWIFT_DATE %{POSTINT:day}%{MONTH}%{YEAR}%{HOUR}%{MINUTE}%{SECOND}
+DATAOREMPTY (%{DATA}|-)
+IPCLIENT (%{IP}|-)
+REQUEST_PATH (%{DATA}_%{DATA:user}([/]%{DATA})*|%{GREEDYDATA})
+CLIENT_IP %{IP:client_ip}|-
+REMOTE_ADDR %{IP:remote_address}|-
+BYTES_RECVD (%{NUMBER:bytes_recvd}|-)
+BYTES_SENT (%{NUMBER:bytes_sent}|-)
+
+SWIFT_LOG_INFO %{OIO_HEADER} %{LOGLEVEL}  %{CLIENT_IP} %{REMOTE_ADDR} %{DATAOREMPTY:datetime} %{WORD:request_method} %{REQUEST_PATH:request_path} %{DATAOREMPTY:protocol} %{NUMBER:status_int} %{SERVICE_NAME:referer} %{SERVICE_NAME:user_agent} %{DATAOREMPTY} %{BYTES_RECVD} %{BYTES_SENT} %{DATAOREMPTY:client_etag} %{DATA:transaction_id} %{DATAOREMPTY:headers} %{NUMBER:request_time} %{DATAOREMPTY:source} %{DATAOREMPTY:log_info} %{NUMBER:request_start_time} %{NUMBER:request_end_time} %{DATAOREMPTY:policy_index}
+
+SWIFT_LOG_NOTICE %{OIO_HEADER} %{LOGLEVEL} %{GREEDYDATA}
+
+SWIFT_LOG %{SWIFT_LOG_INFO}|%{SWIFT_LOG_NOTICE}

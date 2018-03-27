@@ -6,24 +6,29 @@ filebeat.prospectors:
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/*/*.access
-    - /var/log/oio/sds/OPENIO/rawx-0/rawx-0-httpd-access.log
+    - /var/log/oio/sds/OPENIO/oioswift-*/oioswift-*.log
   fields:
-    name_log: access-oio
+    name_log: oio-swift
+- type: log
+  enabled: true
+  paths:
+    - /var/log/oio/sds/OPENIO/*/*.access
+    - /var/log/oio/sds/OPENIO/rawx-*/*-access.log
+  fields:
+    name_log: oio-access
 - type: log
   enabled: true
   paths:
     - /var/log/oio/sds/OPENIO/meta*/*.log
     - /var/log/oio/sds/OPENIO/conscience*/*.log
-    - /var/log/oio/sds/OPENIO/oio*/*.log
+    - /var/log/oio/sds/OPENIO/oioproxy-*/*.log
+    - /var/log/oio/sds/OPENIO/oio-event-agent*/*.log
 
   fields:
-    name_log: logs-oio
+    name_log: oio-logs
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   hosts: ["192.168.1.43:5044"]
-  username: "logstash"
-  password: "logstash"
   #send data with the specific format with codecs
   #codec.format :
   #  string:  '%{[@timestamp]} %{[@message]}'
