@@ -53,6 +53,74 @@ $ docker-compose up -d
 ```
 $ docker-compose stop
 ```
+
+
+#### Nettoyer les logs qui datent de plus 30 jours
+
+il existe 2 manières de supprimer les indices des logs:
+
+- Par ligne de commande, en tapant la commande suivante
+```
+$ /usr/bin/curator --host 127.0.0.1 delete indices --older-than 30 --time-unit days --timestring '%Y.%m.%d'
+```
+- ou à partir de fichier de configuration
+
+le fichier `curator.yml` contenant les informations sur le cluster elasticsearch
+
+```
+---
+# Remember, leave a key empty if there is no value.  None will be a string,
+# not a Python "NoneType"
+client:
+  hosts:
+    - 127.0.0.1
+  port: 9200
+  url_prefix:
+  use_ssl: False
+  certificate:
+  client_cert:
+  client_key:
+  ssl_no_validate: False
+  http_auth:
+  timeout: 30
+  master_only: False
+
+logging:
+  loglevel: INFO
+  logfile:
+  logformat: default
+  blacklist: ['elasticsearch', 'urllib3']
+
+```
+ le fichier `delete_indices.yml` contenant les actions à réaliser
+
+```
+actions:
+  1:
+    action: delete_indices
+    description: >-
+      Delete indices older than 10 days (based on index access-oio), for logstash-
+      prefixed indices. Ignore the error if the filter does not result in an
+      actionable list of indices (ignore_empty_list) and exit cleanly.
+    options:
+      ignore_empty_list: True
+      disable_action: True
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: logstash-
+    - filtertype: age
+      source: access-oio
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: 30
+```
+
+```
+$ /usr/bin/curator ./delete_indices.yml --config ./curator.yml --dry-run
+```
+
 --------------
 ## Quelques erreurs rencontrées fréquemment
 
@@ -79,6 +147,7 @@ $ chmod go-w chemin_vers/filebeat.yml
 $ chmod -R 777 chemin_du_répertoire
 ```
 -------------------------------
+
 #### Activer les logs dans le container openio/sds
 * Ajouter le socket /dev/log   
 ```
