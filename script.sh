@@ -23,19 +23,23 @@ do
    $post $repo
 
    # upload file /etc/network/interfaces
-   file="/etc/network/interfaces"
+   file="file1.txt"
    $upload $repo $file
    echo "[UPLOAD] $file --> $repo"
 
    #upload file /etc/hosts
-   file="/etc/hosts"
+   file="file2.txt"
    $upload $repo $file
    echo "[UPLOAD] $file --> $repo"
+
+   file="file2.txt"
+   $download $repo $file
+   echo "[DOWNLOAD] $file --> $repo"
 
    #delete one file  among uploaded
    $delete $repo $file
    echo "[DELETE] $file --> $repo"
-   
+
 done
 
 #print stat, auth and list

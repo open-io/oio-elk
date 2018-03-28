@@ -1,17 +1,17 @@
 [
   {
-    "_id": "QA",
+    "_id": "33a58660-3292-11e8-8abe-8d1c76c9630a",
     "_type": "dashboard",
     "_source": {
-      "title": "QA",
+      "title": "Customer dashboard",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"gridData\":{\"h\":4,\"i\":\"1\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"grok-failure\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":4,\"i\":\"2\",\"w\":3,\"x\":3,\"y\":0},\"id\":\"9be5c010-2b7a-11e8-8be0-5d8d5584081c\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.2.2\"}]",
-      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":4,\"i\":\"1\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"f54d2830-327f-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":0,\"y\":17,\"w\":12,\"h\":4,\"i\":\"2\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"672e2aa0-3288-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":24,\"w\":6,\"h\":3,\"i\":\"3\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"18bfc710-3289-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":6,\"y\":21,\"w\":6,\"h\":3,\"i\":\"4\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"eb4e5300-3288-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":21,\"w\":6,\"h\":3,\"i\":\"5\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"09a05150-3289-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":6,\"y\":24,\"w\":6,\"h\":3,\"i\":\"6\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"fe53b580-3288-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":0,\"y\":4,\"w\":12,\"h\":4,\"i\":\"8\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"63a0fa50-328a-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":0,\"y\":13,\"w\":7,\"h\":4,\"i\":\"9\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"98ffefc0-3281-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":7,\"y\":13,\"w\":5,\"h\":4,\"i\":\"10\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"ef93f020-3281-11e8-b0ed-77d2cb0faa8a\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":0,\"y\":8,\"w\":12,\"h\":5,\"i\":\"11\"},\"version\":\"6.2.2\",\"type\":\"visualization\",\"id\":\"a9b67180-3287-11e8-b0ed-77d2cb0faa8a\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}",
       "version": 1,
       "timeRestore": false,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
       }
     }
   },
@@ -44,6 +44,22 @@
       "timeRestore": false,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "QA",
+    "_type": "dashboard",
+    "_source": {
+      "title": "QA",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"gridData\":{\"h\":4,\"i\":\"1\",\"w\":3,\"x\":0,\"y\":0},\"id\":\"grok-failure\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":4,\"i\":\"2\",\"w\":3,\"x\":3,\"y\":0},\"id\":\"9be5c010-2b7a-11e8-8be0-5d8d5584081c\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.2.2\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}},\"highlightAll\":true,\"version\":true}"
       }
     }
   },

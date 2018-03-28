@@ -6,7 +6,7 @@ ISO %{TIMESTAMP_ISO8601}
 TIMESYS %{SYSLOGTIMESTAMP}
 LOG_TIME (?:%{ISO}|%{TIMESYS})
 SEPARATOR :
-OIO_HEADER %{LOG_TIME:log_timestamp} %{SYSLOGHOST} %{INSTANCE_ID}%{SEPARATOR}?
+OIO_HEADER %{LOG_TIME:log_timestamp} %{GREEDYDATA:host} %{INSTANCE_ID}%{SEPARATOR}?
 
 
 ACCESS_LOG %{OIO_HEADER} (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
@@ -15,16 +15,17 @@ DEBUG_LOG %{OIO_HEADER} %{LOGLEVEL}  %{NUMBER:process_id} %{WORD:thread_id} %{WO
 
 
 # Mapping of oioswift log
-# SWIFT_DATE %{POSTINT:day}%{MONTH}%{YEAR}%{HOUR}%{MINUTE}%{SECOND}
+
 DATAOREMPTY (%{DATA}|-)
 IPCLIENT (%{IP}|-)
-REQUEST_PATH (%{DATA}_%{DATA:user}([/]%{DATA})*|%{GREEDYDATA})
+REQUEST_PATH (/v%{DATA}/%{DATA:user}([/%]%{DATA})*|%{GREEDYDATA})
 CLIENT_IP %{IP:client_ip}|-
 REMOTE_ADDR %{IP:remote_address}|-
 BYTES_RECVD (%{NUMBER:bytes_recvd}|-)
 BYTES_SENT (%{NUMBER:bytes_sent}|-)
 
-SWIFT_LOG_INFO %{OIO_HEADER} %{LOGLEVEL}  %{CLIENT_IP} %{REMOTE_ADDR} %{DATAOREMPTY:datetime} %{WORD:request_method} %{REQUEST_PATH:request_path} %{DATAOREMPTY:protocol} %{NUMBER:status_int} %{SERVICE_NAME:referer} %{SERVICE_NAME:user_agent} %{DATAOREMPTY} %{BYTES_RECVD} %{BYTES_SENT} %{DATAOREMPTY:client_etag} %{DATA:transaction_id} %{DATAOREMPTY:headers} %{NUMBER:request_time} %{DATAOREMPTY:source} %{DATAOREMPTY:log_info} %{NUMBER:request_start_time} %{NUMBER:request_end_time} %{DATAOREMPTY:policy_index}
+
+SWIFT_LOG_INFO %{OIO_HEADER} %{LOGLEVEL}  %{CLIENT_IP} %{REMOTE_ADDR} %{DATAOREMPTY:datetime} %{WORD:request_method} %{REQUEST_PATH:request_path} %{DATAOREMPTY:protocol} %{NUMBER:status_int} %{SERVICE_NAME:referer} %{GREEDYDATA:user_agent} %{DATAOREMPTY} %{BYTES_RECVD} %{BYTES_SENT} %{DATAOREMPTY:client_etag} %{DATA:transaction_id} %{DATAOREMPTY:headers} %{NUMBER:request_time} %{DATAOREMPTY:source} %{DATAOREMPTY:log_info} %{NUMBER:request_start_time} %{NUMBER:request_end_time} %{DATAOREMPTY:policy_index}
 
 SWIFT_LOG_NOTICE %{OIO_HEADER} %{LOGLEVEL} %{GREEDYDATA}
 
