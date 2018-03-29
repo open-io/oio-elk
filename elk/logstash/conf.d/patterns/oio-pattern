@@ -1,20 +1,23 @@
 INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_NAME:servicetype},%{NUMBER:num}
-USER_ID ([0-9A-F]{64}|-)
-SESSION_ID [0-9A-F]{32}
+USER_ID ([0-9A-F]*|-)
+SESSION_ID [0-9A-F]*
 SERVICE_NAME [a-zA-Z0-9._-]+
 ISO %{TIMESTAMP_ISO8601}
 TIMESYS %{SYSLOGTIMESTAMP}
 LOG_TIME (?:%{ISO}|%{TIMESYS})
 SEPARATOR :
+
 OIO_HEADER %{LOG_TIME:log_timestamp} %{GREEDYDATA:host} %{INSTANCE_ID}%{SEPARATOR}?
 
-
-ACCESS_LOG %{OIO_HEADER} (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
-
-DEBUG_LOG %{OIO_HEADER} %{LOGLEVEL}  %{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level} %{GREEDYDATA:payload}
+OIO_COMMON_HEADER %{OIO_HEADER} (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level}
 
 
-# Mapping of oioswift log
+ACCESS_LOG %{OIO_COMMON_HEADER} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:response_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
+
+DEBUG_LOG %{OIO_COMMON_HEADER} %{GREEDYDATA:payload}
+
+
+# Pattern of oioswift log
 
 DATAOREMPTY (%{DATA}|-)
 IPCLIENT (%{IP}|-)
@@ -30,3 +33,23 @@ SWIFT_LOG_INFO %{OIO_HEADER} %{LOGLEVEL}  %{CLIENT_IP} %{REMOTE_ADDR} %{DATAOREM
 SWIFT_LOG_NOTICE %{OIO_HEADER} %{LOGLEVEL} %{GREEDYDATA}
 
 SWIFT_LOG %{SWIFT_LOG_INFO}|%{SWIFT_LOG_NOTICE}
+
+
+
+# Pattern of oio-blob-indexer
+
+TAG %{WORD:indexer_tag}=%{LOG_TIME:time_tag}
+ELAPSED elapsed=%{NUMBER:elapsed}
+PASS pass=%{NUMBER:pass}
+ERRORS errors=%{NUMBER:errors}
+CHUNKS chunks=%{NUMBER:chunks}
+RATE %{NUMBER:rate}/s
+BLOB_INDEXER_LOG %{OIO_COMMON_HEADER} %{TAG} %{ELAPSED} %{PASS} %{ERRORS} %{CHUNKS} %{RATE}
+
+
+
+# Pattern account
+ACCOUNT_LOG %{OIO_COMMON_HEADER} %{WORD:request_type} %{NUMBER:time}
+
+
+# pattern de ?????

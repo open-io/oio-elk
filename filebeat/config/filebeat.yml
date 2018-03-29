@@ -23,9 +23,14 @@ filebeat.prospectors:
     - /var/log/oio/sds/OPENIO/conscience*/*.log
     - /var/log/oio/sds/OPENIO/oioproxy-*/*.log
     - /var/log/oio/sds/OPENIO/oio-event-agent*/*.log
-
   fields:
     name_log: oio-logs
+- type: log
+  enabled: true
+  paths:
+    - /var/log/oio/sds/OPENIO/oio-blob-indexer-*/*.log
+  fields:
+    name_log: oio-blob-indexer
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   hosts: ["192.168.1.43:5044"]
