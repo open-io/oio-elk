@@ -52,4 +52,8 @@ BLOB_INDEXER_LOG %{OIO_COMMON_HEADER} %{TAG} %{ELAPSED} %{PASS} %{ERRORS} %{CHUN
 ACCOUNT_LOG %{OIO_COMMON_HEADER} %{WORD:request_type} %{NUMBER:request_time}
 
 
-# pattern de ?????
+# pattern de redis
+
+REDIS_HEADER %{NUMBER:process_id}:[A-Z]
+REDISTIMESTAMP %{MONTHDAY} %{MONTH} %{TIME}
+REDIS_LOG (%{REDIS_HEADER} %{REDISTIMESTAMP:log_timestamp} %{GREEDYDATA:redis_mesage})|%{GREEDYDATA}

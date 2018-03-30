@@ -37,6 +37,12 @@ filebeat.prospectors:
     - /var/log/oio/sds/OPENIO/account-*/*.log
   fields:
     name_log: oio-account
+- type: log
+  enabled: true
+  paths:
+    - /var/log/oio/sds/OPENIO/redis-*/*.log
+  fields:
+    name_log: oio-redis
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   hosts: ["192.168.1.43:5044"]
