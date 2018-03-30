@@ -1,5 +1,5 @@
 INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_NAME:servicetype},%{NUMBER:num}
-USER_ID ([0-9A-F]*|-)
+USER_ID ([0-9a-zA-Z]*|-)
 SESSION_ID [0-9A-F]*
 SERVICE_NAME [a-zA-Z0-9._-]+
 ISO %{TIMESTAMP_ISO8601}
@@ -49,7 +49,7 @@ BLOB_INDEXER_LOG %{OIO_COMMON_HEADER} %{TAG} %{ELAPSED} %{PASS} %{ERRORS} %{CHUN
 
 
 # Pattern account
-ACCOUNT_LOG %{OIO_COMMON_HEADER} %{WORD:request_type} %{NUMBER:time}
+ACCOUNT_LOG %{OIO_COMMON_HEADER} %{WORD:request_type} %{NUMBER:request_time}
 
 
 # pattern de ?????
