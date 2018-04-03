@@ -9,7 +9,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -23,7 +23,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"key\":\"servicetype.keyword\",\"negate\":false,\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"oioproxy\"},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"key\":\"servicetype.keyword\",\"negate\":false,\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"oioproxy\"},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     }
   },
@@ -37,7 +37,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -51,7 +51,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -65,7 +65,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -79,7 +79,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -93,7 +93,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -107,7 +107,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -121,7 +121,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -135,7 +135,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -149,7 +149,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -163,7 +163,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -177,7 +177,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -191,7 +191,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -205,7 +205,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     }
   },
@@ -219,7 +219,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -233,7 +233,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"query\":{\"query\":{\"query_string\":{\"query\":\"service_type:\\\"conscience\\\" AND type:\\\"access\\\"\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"query\":{\"query\":{\"query_string\":{\"query\":\"service_type:\\\"conscience\\\" AND type:\\\"access\\\"\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     }
   },
@@ -247,7 +247,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -261,7 +261,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     }
   },
@@ -275,7 +275,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     }
   },
@@ -283,13 +283,13 @@
     "_id": "grok-failure-by-source",
     "_type": "visualization",
     "_source": {
-      "title": "grok failure by source",
+      "title": "grok failure log access",
       "visState": "{\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"source.raw\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"tags:\\\"_grokparsefailure\\\"\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"tags:\\\"_grokparsefailure\\\"\"}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     }
   },
@@ -303,7 +303,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -317,7 +317,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"key\":\"servicetype.keyword\",\"negate\":false,\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"oioproxy\"},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"key\":\"servicetype.keyword\",\"negate\":false,\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"oioproxy\"},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     }
   },
@@ -331,7 +331,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"tags:\\\"_grokparsefailure\\\"\"}},\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"tags:\\\"_grokparsefailure\\\"\"}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     }
   },
@@ -345,7 +345,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -359,7 +359,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"query\":{\"query\":{\"query_string\":{\"query\":\"service_type:\\\"conscience\\\" AND type:\\\"access\\\"\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"query\":{\"query\":{\"query_string\":{\"query\":\"service_type:\\\"conscience\\\" AND type:\\\"access\\\"\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     }
   },
@@ -373,7 +373,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"query\":{\"query\":{\"query_string\":{\"query\":\"tags:\\\"_grokparsefailure\\\"\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"tags\",\"value\":\"_grokparsefailure\",\"params\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"tags\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"query\":{\"query\":{\"query_string\":{\"query\":\"tags:\\\"_grokparsefailure\\\"\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"tags\",\"value\":\"_grokparsefailure\",\"params\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"tags\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
@@ -387,7 +387,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     }
   },
@@ -401,7 +401,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -415,7 +415,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -443,7 +443,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -457,7 +457,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -471,7 +471,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -485,7 +485,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"b2892950-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"b2892950-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -499,7 +499,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -513,7 +513,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -527,7 +527,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"conscience\",\"params\":{\"query\":\"conscience\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"conscience\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"conscience\",\"params\":{\"query\":\"conscience\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"conscience\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -541,7 +541,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -555,7 +555,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -569,7 +569,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -583,7 +583,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"b2892950-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"tags\",\"value\":\"_grokparsefailure\",\"params\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"tags\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"b2892950-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"tags\",\"value\":\"_grokparsefailure\",\"params\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"tags\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     }
   },
@@ -597,7 +597,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -605,13 +605,13 @@
     "_id": "98ffefc0-3281-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "return code distribution by request method",
+      "title": " swift: return code distribution by request method",
       "visState": "{\"title\":\"return code distribution by request method\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"request_method.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"status_int\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -619,13 +619,13 @@
     "_id": "f54d2830-327f-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "BP IN/OUT",
+      "title": "swift: BP IN/OUT",
       "visState": "{\"title\":\"BP IN/OUT\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Sum of bytes_recvd\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Sum of bytes_recvd\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"2\",\"label\":\"Sum of bytes_sent\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes_recvd\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes_sent\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -633,13 +633,13 @@
     "_id": "a9b67180-3287-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "object size distribution",
+      "title": "swift: object size distribution",
       "visState": "{\"title\":\"object size distribution\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"bytes_recvd\",\"ranges\":[{\"from\":0,\"to\":100000},{\"from\":100000,\"to\":200000},{\"from\":200000,\"to\":500000},{\"from\":500000,\"to\":1000000},{\"from\":1000000,\"to\":2000000},{\"from\":2000000,\"to\":5000000},{\"from\":5000000,\"to\":10000000},{\"from\":10000000,\"to\":20000000},{\"from\":20000000,\"to\":50000000},{\"from\":50000000,\"to\":100000000},{\"from\":100000000,\"to\":200000000},{\"from\":200000000,\"to\":500000000},{\"from\":500000000,\"to\":1000000000},{\"from\":1000000000,\"to\":2000000000},{\"from\":2000000000,\"to\":5000000000},{\"from\":5000000000,\"to\":10000000000}]}}]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -647,13 +647,13 @@
     "_id": "18bfc710-3289-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "TOP 10 user account by DELETE request method",
+      "title": "swift: TOP 10 user account by DELETE request method",
       "visState": "{\"title\":\"TOP 10 user account by DELETE request method\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"DELETE\",\"params\":{\"query\":\"DELETE\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"DELETE\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"DELETE\",\"params\":{\"query\":\"DELETE\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"DELETE\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -661,13 +661,13 @@
     "_id": "09a05150-3289-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "TOP 10 user account by POST request met",
+      "title": "swift: TOP 10 user account by POST request met",
       "visState": "{\"title\":\"TOP 10 user account by POST request met\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"POST\",\"params\":{\"query\":\"POST\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"POST\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"POST\",\"params\":{\"query\":\"POST\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"POST\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -681,7 +681,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -695,7 +695,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -709,7 +709,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"666d71b0-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -723,7 +723,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -737,7 +737,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -751,7 +751,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -765,7 +765,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -779,7 +779,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -793,7 +793,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -807,7 +807,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -821,7 +821,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -835,7 +835,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"a45e4cc0-2b58-11e8-8be0-5d8d5584081c\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -849,7 +849,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"query\":{\"query\":{\"query_string\":{\"query\":\"servicetype:\\\"conscience\\\"\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"query\":{\"query\":{\"query_string\":{\"query\":\"servicetype:\\\"conscience\\\"\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     }
   },
@@ -863,7 +863,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oio-event-agent\",\"params\":{\"query\":\"oio-event-agent\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oio-event-agent\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oio-event-agent\",\"params\":{\"query\":\"oio-event-agent\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oio-event-agent\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -877,7 +877,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -891,7 +891,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"conscienceagent\",\"params\":{\"query\":\"conscienceagent\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"conscienceagent\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"conscienceagent\",\"params\":{\"query\":\"conscienceagent\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"conscienceagent\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -905,7 +905,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -919,7 +919,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -933,7 +933,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -947,7 +947,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -961,7 +961,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"rawx\",\"params\":{\"query\":\"rawx\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"rawx\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -975,7 +975,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"d21a9ec0-32a6-11e8-88a9-3f0b73e5fd1b\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta1\",\"params\":{\"query\":\"meta1\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -989,7 +989,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1003,7 +1003,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta0\",\"params\":{\"query\":\"meta0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1017,7 +1017,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae2\",\"filter\":[{\"meta\":{\"index\":\"6fd80710-2db1-11e8-a215-c7279b800acb\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"oioproxy\",\"params\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"oioproxy\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1025,13 +1025,13 @@
     "_id": "eb4e5300-3288-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "TOP 10 user account by GET request method",
+      "title": "swift: TOP 10 user account by GET request method",
       "visState": "{\"title\":\"TOP 10 user account by GET request method\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"GET\",\"params\":{\"query\":\"GET\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"GET\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"GET\",\"params\":{\"query\":\"GET\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"GET\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1039,13 +1039,13 @@
     "_id": "672e2aa0-3288-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "TOP 10 accounts usage",
+      "title": "swift: TOP 10 accounts usage",
       "visState": "{\"title\":\"TOP 10 accounts usage\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes_recvd\",\"customLabel\":\"Bytes received\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"bytes_sent\",\"customLabel\":\"Bytes sent\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1053,13 +1053,13 @@
     "_id": "fe53b580-3288-11e8-b0ed-77d2cb0faa8a",
     "_type": "visualization",
     "_source": {
-      "title": "TOP 10 user account by PUT request met",
+      "title": "swift: TOP 10 user account by PUT request met",
       "visState": "{\"title\":\"TOP 10 user account by PUT request met\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"user.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"User\"}}]}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"PUT\",\"params\":{\"query\":\"PUT\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"PUT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[{\"meta\":{\"index\":\"61823c00-3269-11e8-b0ed-77d2cb0faa8a\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"request_method.keyword\",\"value\":\"PUT\",\"params\":{\"query\":\"PUT\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"request_method.keyword\":{\"query\":\"PUT\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1073,7 +1073,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1087,7 +1087,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae3\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1101,7 +1101,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   },
@@ -1115,7 +1115,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"filter\":[{\"meta\":{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+        "searchSourceJSON": "{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601ae1\",\"filter\":[{\"meta\":{\"index\":\"7928ca40-3340-11e8-91a3-638aaf601aee\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"servicetype.keyword\",\"value\":\"meta2\",\"params\":{\"query\":\"meta2\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"servicetype.keyword\":{\"query\":\"meta2\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
       }
     }
   }
