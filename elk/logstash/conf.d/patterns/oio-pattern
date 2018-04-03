@@ -60,6 +60,7 @@ REDIS_LOG (%{REDIS_HEADER} %{REDISTIMESTAMP:log_timestamp} %{GREEDYDATA:redis_me
 
 
 # Pattern errosrs log
-ERROR_TIMESTAMP %{DAY}%{MONTHDAY} %{MONTH} %{TIME} %{YEAR}
-PID %{WORD} %{NUMBER:process_id} %{NUMBER}
-ERROR_LOG [%{ERROR_TIMESTAMP}] [:%{LOGLEVEL}] [PID] %{GREEDYDATA:error_message}
+ERROR_TIMESTAMP \[%{DAY} %{MONTH} %{MONTHDAY} %{TIME} %{YEAR}\]
+SEVERITY \[%{DATA:severity}:%{WORD:loglevel}\]
+PID \[pid %{NUMBER:process_id}:tid %{NUMBER:thread_id}\]
+ERROR_LOG %{ERROR_TIMESTAMP} %{SEVERITY} %{PID} %{GREEDYDATA:error_message}
