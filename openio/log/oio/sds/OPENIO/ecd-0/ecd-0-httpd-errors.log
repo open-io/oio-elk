@@ -19731,3 +19731,215 @@
 [Tue Apr 03 16:24:19.457692 2018] [:info] [pid 46:tid 140697531459712] mod_wsgi (pid=46): Cleanup interpreter ''.
 [Tue Apr 03 16:24:19.461066 2018] [:info] [pid 46:tid 140697531459712] mod_wsgi (pid=46): Terminating Python.
 [Tue Apr 03 16:24:19.463674 2018] [:info] [pid 46:tid 140697531459712] mod_wsgi (pid=46): Python has shutdown.
+[Wed Apr 04 09:24:10.795558 2018] [:info] [pid 43:tid 140697531459712] mod_wsgi (pid=43): Destroying interpreters.
+[Wed Apr 04 09:24:10.798224 2018] [:info] [pid 44:tid 140697531459712] mod_wsgi (pid=44): Destroying interpreters.
+[Wed Apr 04 09:24:10.800410 2018] [:info] [pid 43:tid 140697531459712] mod_wsgi (pid=43): Cleanup interpreter ''.
+[Wed Apr 04 09:24:10.800716 2018] [:info] [pid 44:tid 140697531459712] mod_wsgi (pid=44): Cleanup interpreter ''.
+[Wed Apr 04 09:24:10.919389 2018] [:info] [pid 44:tid 140697531459712] mod_wsgi (pid=44): Terminating Python.
+[Wed Apr 04 09:24:10.920635 2018] [:info] [pid 43:tid 140697531459712] mod_wsgi (pid=43): Terminating Python.
+[Wed Apr 04 09:24:10.967478 2018] [:info] [pid 44:tid 140697531459712] mod_wsgi (pid=44): Python has shutdown.
+[Wed Apr 04 09:24:10.968513 2018] [:info] [pid 43:tid 140697531459712] mod_wsgi (pid=43): Python has shutdown.
+[Wed Apr 04 09:24:11.291535 2018] [core:info] [pid 23:tid 140697531459712] AH00096: removed PID file /run/oio/sds/OPENIO-ecd-0-httpd.pid (pid=23)
+[Wed Apr 04 09:24:11.293074 2018] [mpm_worker:notice] [pid 23:tid 140697531459712] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 09:24:11.314451 2018] [:info] [pid 40:tid 140697531459712] mod_wsgi (pid=40): Shutdown requested 'ecd-0'.
+[Wed Apr 04 09:24:11.318536 2018] [:info] [pid 40:tid 140697531459712] mod_wsgi (pid=40): Stopping process 'ecd-0'.
+[Wed Apr 04 09:24:11.314477 2018] [:info] [pid 41:tid 140697531459712] mod_wsgi (pid=41): Shutdown requested 'ecd-0'.
+[Wed Apr 04 09:24:11.320098 2018] [:info] [pid 41:tid 140697531459712] mod_wsgi (pid=41): Stopping process 'ecd-0'.
+[Wed Apr 04 09:24:11.320169 2018] [:info] [pid 40:tid 140697531459712] mod_wsgi (pid=40): Destroying interpreters.
+[Wed Apr 04 09:24:11.322250 2018] [:info] [pid 40:tid 140697531459712] mod_wsgi (pid=40): Cleanup interpreter ''.
+[Wed Apr 04 09:24:11.322784 2018] [:info] [pid 41:tid 140697531459712] mod_wsgi (pid=41): Destroying interpreters.
+[Wed Apr 04 09:24:11.326314 2018] [:info] [pid 41:tid 140697531459712] mod_wsgi (pid=41): Cleanup interpreter ''.
+[Wed Apr 04 09:24:11.387447 2018] [:info] [pid 41:tid 140697531459712] mod_wsgi (pid=41): Terminating Python.
+[Wed Apr 04 09:24:11.388756 2018] [:info] [pid 40:tid 140697531459712] mod_wsgi (pid=40): Terminating Python.
+[Wed Apr 04 09:24:11.415573 2018] [:info] [pid 41:tid 140697531459712] mod_wsgi (pid=41): Python has shutdown.
+[Wed Apr 04 09:24:11.416434 2018] [:info] [pid 40:tid 140697531459712] mod_wsgi (pid=40): Python has shutdown.
+[Wed Apr 04 09:25:58.977448 2018] [:info] [pid 69:tid 140305167591552] mod_wsgi (pid=69): Initializing Python.
+[Wed Apr 04 09:25:58.984336 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 09:25:58.985006 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Initializing Python.
+[Wed Apr 04 09:25:58.984684 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 09:25:58.986305 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Initializing Python.
+[Wed Apr 04 09:25:58.986314 2018] [:info] [pid 71:tid 140305167591552] mod_wsgi (pid=71): Initializing Python.
+[Wed Apr 04 09:25:58.985409 2018] [:info] [pid 72:tid 140305167591552] mod_wsgi (pid=72): Initializing Python.
+[Wed Apr 04 09:25:58.985728 2018] [:info] [pid 73:tid 140305167591552] mod_wsgi (pid=73): Initializing Python.
+[Wed Apr 04 09:25:58.978563 2018] [mpm_worker:notice] [pid 27:tid 140305167591552] AH00292: Apache/2.4.6 (CentOS) mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Wed Apr 04 09:25:58.989570 2018] [mpm_worker:info] [pid 27:tid 140305167591552] AH00293: Server built: Oct 19 2017 20:39:16
+[Wed Apr 04 09:25:58.989598 2018] [core:notice] [pid 27:tid 140305167591552] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/ecd-0/ecd-0-httpd.conf'
+[Wed Apr 04 09:25:58.986036 2018] [:info] [pid 70:tid 140305167591552] mod_wsgi (pid=70): Initializing Python.
+[Wed Apr 04 09:25:59.007868 2018] [:info] [pid 69:tid 140305167591552] mod_wsgi (pid=69): Attach interpreter ''.
+[Wed Apr 04 09:25:59.016461 2018] [:info] [pid 71:tid 140305167591552] mod_wsgi (pid=71): Attach interpreter ''.
+[Wed Apr 04 09:25:59.030391 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Attach interpreter ''.
+[Wed Apr 04 09:25:59.030872 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Attach interpreter ''.
+[Wed Apr 04 09:25:59.032190 2018] [:info] [pid 72:tid 140305167591552] mod_wsgi (pid=72): Attach interpreter ''.
+[Wed Apr 04 09:25:59.035642 2018] [:info] [pid 73:tid 140305167591552] mod_wsgi (pid=73): Attach interpreter ''.
+[Wed Apr 04 09:25:59.038669 2018] [:info] [pid 70:tid 140305167591552] mod_wsgi (pid=70): Attach interpreter ''.
+[Wed Apr 04 09:25:59.991750 2018] [:info] [pid 70:tid 140305167591552] mod_wsgi (pid=70): Destroying interpreters.
+[Wed Apr 04 09:25:59.991787 2018] [:info] [pid 70:tid 140305167591552] mod_wsgi (pid=70): Cleanup interpreter ''.
+[Wed Apr 04 09:25:59.998162 2018] [:info] [pid 70:tid 140305167591552] mod_wsgi (pid=70): Terminating Python.
+[Wed Apr 04 09:26:00.004762 2018] [:info] [pid 70:tid 140305167591552] mod_wsgi (pid=70): Python has shutdown.
+[Wed Apr 04 09:26:00.992081 2018] [:info] [pid 69:tid 140305167591552] mod_wsgi (pid=69): Destroying interpreters.
+[Wed Apr 04 09:26:00.992111 2018] [:info] [pid 69:tid 140305167591552] mod_wsgi (pid=69): Cleanup interpreter ''.
+[Wed Apr 04 09:26:00.995898 2018] [:info] [pid 69:tid 140305167591552] mod_wsgi (pid=69): Terminating Python.
+[Wed Apr 04 09:26:00.998770 2018] [:info] [pid 69:tid 140305167591552] mod_wsgi (pid=69): Python has shutdown.
+[Wed Apr 04 09:26:01.992896 2018] [:info] [pid 73:tid 140305167591552] mod_wsgi (pid=73): Destroying interpreters.
+[Wed Apr 04 09:26:01.992954 2018] [:info] [pid 73:tid 140305167591552] mod_wsgi (pid=73): Cleanup interpreter ''.
+[Wed Apr 04 09:26:01.996847 2018] [:info] [pid 73:tid 140305167591552] mod_wsgi (pid=73): Terminating Python.
+[Wed Apr 04 09:26:01.999502 2018] [:info] [pid 73:tid 140305167591552] mod_wsgi (pid=73): Python has shutdown.
+[Wed Apr 04 09:26:28.386691 2018] [:info] [pid 72:tid 140305167591552] mod_wsgi (pid=72): Destroying interpreters.
+[Wed Apr 04 09:26:28.389165 2018] [:info] [pid 72:tid 140305167591552] mod_wsgi (pid=72): Cleanup interpreter ''.
+[Wed Apr 04 09:26:28.386876 2018] [:info] [pid 71:tid 140305167591552] mod_wsgi (pid=71): Destroying interpreters.
+[Wed Apr 04 09:26:28.389406 2018] [:info] [pid 71:tid 140305167591552] mod_wsgi (pid=71): Cleanup interpreter ''.
+[Wed Apr 04 09:26:28.418163 2018] [:info] [pid 72:tid 140305167591552] mod_wsgi (pid=72): Terminating Python.
+[Wed Apr 04 09:26:28.419473 2018] [:info] [pid 71:tid 140305167591552] mod_wsgi (pid=71): Terminating Python.
+[Wed Apr 04 09:26:28.426730 2018] [:info] [pid 71:tid 140305167591552] mod_wsgi (pid=71): Python has shutdown.
+[Wed Apr 04 09:26:28.427835 2018] [:info] [pid 72:tid 140305167591552] mod_wsgi (pid=72): Python has shutdown.
+[Wed Apr 04 09:26:28.462144 2018] [core:info] [pid 27:tid 140305167591552] AH00096: removed PID file /run/oio/sds/OPENIO-ecd-0-httpd.pid (pid=27)
+[Wed Apr 04 09:26:28.462188 2018] [mpm_worker:notice] [pid 27:tid 140305167591552] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 09:26:28.472727 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Shutdown requested 'ecd-0'.
+[Wed Apr 04 09:26:28.472868 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Stopping process 'ecd-0'.
+[Wed Apr 04 09:26:28.472919 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Destroying interpreters.
+[Wed Apr 04 09:26:28.472948 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Cleanup interpreter ''.
+[Wed Apr 04 09:26:28.474377 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Shutdown requested 'ecd-0'.
+[Wed Apr 04 09:26:28.474504 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Stopping process 'ecd-0'.
+[Wed Apr 04 09:26:28.474523 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Destroying interpreters.
+[Wed Apr 04 09:26:28.474533 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Cleanup interpreter ''.
+[Wed Apr 04 09:26:28.477376 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Terminating Python.
+[Wed Apr 04 09:26:28.481573 2018] [:info] [pid 61:tid 140305167591552] mod_wsgi (pid=61): Python has shutdown.
+[Wed Apr 04 09:26:28.481635 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Terminating Python.
+[Wed Apr 04 09:26:28.485937 2018] [:info] [pid 60:tid 140305167591552] mod_wsgi (pid=60): Python has shutdown.
+[Wed Apr 04 09:26:33.649398 2018] [mpm_worker:notice] [pid 330:tid 139964074408064] AH00292: Apache/2.4.6 (CentOS) mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Wed Apr 04 09:26:33.649545 2018] [mpm_worker:info] [pid 330:tid 139964074408064] AH00293: Server built: Oct 19 2017 20:39:16
+[Wed Apr 04 09:26:33.649572 2018] [core:notice] [pid 330:tid 139964074408064] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/ecd-0/ecd-0-httpd.conf'
+[Wed Apr 04 09:26:33.650648 2018] [:info] [pid 375:tid 139964074408064] mod_wsgi (pid=375): Initializing Python.
+[Wed Apr 04 09:26:33.651069 2018] [:info] [pid 373:tid 139964074408064] mod_wsgi (pid=373): Initializing Python.
+[Wed Apr 04 09:26:33.651393 2018] [:info] [pid 372:tid 139964074408064] mod_wsgi (pid=372): Initializing Python.
+[Wed Apr 04 09:26:33.657413 2018] [:info] [pid 374:tid 139964074408064] mod_wsgi (pid=374): Initializing Python.
+[Wed Apr 04 09:26:33.657793 2018] [:info] [pid 371:tid 139964074408064] mod_wsgi (pid=371): Initializing Python.
+[Wed Apr 04 09:26:33.662968 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 09:26:33.665505 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Initializing Python.
+[Wed Apr 04 09:26:33.674075 2018] [:info] [pid 374:tid 139964074408064] mod_wsgi (pid=374): Attach interpreter ''.
+[Wed Apr 04 09:26:33.684936 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 09:26:33.685284 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Initializing Python.
+[Wed Apr 04 09:26:33.688672 2018] [:info] [pid 372:tid 139964074408064] mod_wsgi (pid=372): Attach interpreter ''.
+[Wed Apr 04 09:26:33.703625 2018] [:info] [pid 375:tid 139964074408064] mod_wsgi (pid=375): Attach interpreter ''.
+[Wed Apr 04 09:26:33.712476 2018] [:info] [pid 373:tid 139964074408064] mod_wsgi (pid=373): Attach interpreter ''.
+[Wed Apr 04 09:26:33.719318 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Attach interpreter ''.
+[Wed Apr 04 09:26:33.723305 2018] [:info] [pid 371:tid 139964074408064] mod_wsgi (pid=371): Attach interpreter ''.
+[Wed Apr 04 09:26:33.725148 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Attach interpreter ''.
+[Wed Apr 04 09:26:34.651937 2018] [:info] [pid 371:tid 139964074408064] mod_wsgi (pid=371): Destroying interpreters.
+[Wed Apr 04 09:26:34.651992 2018] [:info] [pid 371:tid 139964074408064] mod_wsgi (pid=371): Cleanup interpreter ''.
+[Wed Apr 04 09:26:34.657699 2018] [:info] [pid 371:tid 139964074408064] mod_wsgi (pid=371): Terminating Python.
+[Wed Apr 04 09:26:34.660281 2018] [:info] [pid 371:tid 139964074408064] mod_wsgi (pid=371): Python has shutdown.
+[Wed Apr 04 09:26:35.652998 2018] [:info] [pid 374:tid 139964074408064] mod_wsgi (pid=374): Destroying interpreters.
+[Wed Apr 04 09:26:35.653041 2018] [:info] [pid 374:tid 139964074408064] mod_wsgi (pid=374): Cleanup interpreter ''.
+[Wed Apr 04 09:26:35.658372 2018] [:info] [pid 374:tid 139964074408064] mod_wsgi (pid=374): Terminating Python.
+[Wed Apr 04 09:26:35.660838 2018] [:info] [pid 374:tid 139964074408064] mod_wsgi (pid=374): Python has shutdown.
+[Wed Apr 04 09:26:36.653708 2018] [:info] [pid 373:tid 139964074408064] mod_wsgi (pid=373): Destroying interpreters.
+[Wed Apr 04 09:26:36.653745 2018] [:info] [pid 373:tid 139964074408064] mod_wsgi (pid=373): Cleanup interpreter ''.
+[Wed Apr 04 09:26:36.663291 2018] [:info] [pid 373:tid 139964074408064] mod_wsgi (pid=373): Terminating Python.
+[Wed Apr 04 09:26:36.666240 2018] [:info] [pid 373:tid 139964074408064] mod_wsgi (pid=373): Python has shutdown.
+[Wed Apr 04 10:02:41.975317 2018] [:info] [pid 375:tid 139964074408064] mod_wsgi (pid=375): Destroying interpreters.
+[Wed Apr 04 10:02:41.975318 2018] [:info] [pid 372:tid 139964074408064] mod_wsgi (pid=372): Destroying interpreters.
+[Wed Apr 04 10:02:41.977693 2018] [:info] [pid 375:tid 139964074408064] mod_wsgi (pid=375): Cleanup interpreter ''.
+[Wed Apr 04 10:02:41.977738 2018] [:info] [pid 372:tid 139964074408064] mod_wsgi (pid=372): Cleanup interpreter ''.
+[Wed Apr 04 10:02:42.071705 2018] [:info] [pid 375:tid 139964074408064] mod_wsgi (pid=375): Terminating Python.
+[Wed Apr 04 10:02:42.076155 2018] [:info] [pid 372:tid 139964074408064] mod_wsgi (pid=372): Terminating Python.
+[Wed Apr 04 10:02:42.108540 2018] [:info] [pid 375:tid 139964074408064] mod_wsgi (pid=375): Python has shutdown.
+[Wed Apr 04 10:02:42.109239 2018] [:info] [pid 372:tid 139964074408064] mod_wsgi (pid=372): Python has shutdown.
+[Wed Apr 04 10:02:42.434271 2018] [core:info] [pid 330:tid 139964074408064] AH00096: removed PID file /run/oio/sds/OPENIO-ecd-0-httpd.pid (pid=330)
+[Wed Apr 04 10:02:42.435139 2018] [mpm_worker:notice] [pid 330:tid 139964074408064] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 10:02:42.449062 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Shutdown requested 'ecd-0'.
+[Wed Apr 04 10:02:42.449044 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Shutdown requested 'ecd-0'.
+[Wed Apr 04 10:02:42.451682 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Stopping process 'ecd-0'.
+[Wed Apr 04 10:02:42.451837 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Stopping process 'ecd-0'.
+[Wed Apr 04 10:02:42.452550 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Destroying interpreters.
+[Wed Apr 04 10:02:42.452724 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Destroying interpreters.
+[Wed Apr 04 10:02:42.453008 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Cleanup interpreter ''.
+[Wed Apr 04 10:02:42.453054 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Cleanup interpreter ''.
+[Wed Apr 04 10:02:42.499725 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Terminating Python.
+[Wed Apr 04 10:02:42.499787 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Terminating Python.
+[Wed Apr 04 10:02:42.512925 2018] [:info] [pid 370:tid 139964074408064] mod_wsgi (pid=370): Python has shutdown.
+[Wed Apr 04 10:02:42.515350 2018] [:info] [pid 369:tid 139964074408064] mod_wsgi (pid=369): Python has shutdown.
+[Wed Apr 04 10:03:05.402041 2018] [mpm_worker:notice] [pid 26:tid 139908175906944] AH00292: Apache/2.4.6 (CentOS) mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Wed Apr 04 10:03:05.402164 2018] [mpm_worker:info] [pid 26:tid 139908175906944] AH00293: Server built: Oct 19 2017 20:39:16
+[Wed Apr 04 10:03:05.402178 2018] [core:notice] [pid 26:tid 139908175906944] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/ecd-0/ecd-0-httpd.conf'
+[Wed Apr 04 10:03:05.408316 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 10:03:05.408656 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Initializing Python.
+[Wed Apr 04 10:03:05.409079 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 10:03:05.409375 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Initializing Python.
+[Wed Apr 04 10:03:05.417912 2018] [:info] [pid 62:tid 139908175906944] mod_wsgi (pid=62): Initializing Python.
+[Wed Apr 04 10:03:05.421186 2018] [:info] [pid 64:tid 139908175906944] mod_wsgi (pid=64): Initializing Python.
+[Wed Apr 04 10:03:05.421801 2018] [:info] [pid 65:tid 139908175906944] mod_wsgi (pid=65): Initializing Python.
+[Wed Apr 04 10:03:05.424200 2018] [:info] [pid 67:tid 139908175906944] mod_wsgi (pid=67): Initializing Python.
+[Wed Apr 04 10:03:05.425820 2018] [:info] [pid 66:tid 139908175906944] mod_wsgi (pid=66): Initializing Python.
+[Wed Apr 04 10:03:05.491446 2018] [:info] [pid 64:tid 139908175906944] mod_wsgi (pid=64): Attach interpreter ''.
+[Wed Apr 04 10:03:05.496893 2018] [:info] [pid 62:tid 139908175906944] mod_wsgi (pid=62): Attach interpreter ''.
+[Wed Apr 04 10:03:05.500748 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Attach interpreter ''.
+[Wed Apr 04 10:03:05.501250 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Attach interpreter ''.
+[Wed Apr 04 10:03:05.507560 2018] [:info] [pid 65:tid 139908175906944] mod_wsgi (pid=65): Attach interpreter ''.
+[Wed Apr 04 10:03:05.510402 2018] [:info] [pid 67:tid 139908175906944] mod_wsgi (pid=67): Attach interpreter ''.
+[Wed Apr 04 10:03:05.514879 2018] [:info] [pid 66:tid 139908175906944] mod_wsgi (pid=66): Attach interpreter ''.
+[Wed Apr 04 10:03:06.403868 2018] [:info] [pid 66:tid 139908175906944] mod_wsgi (pid=66): Destroying interpreters.
+[Wed Apr 04 10:03:06.403932 2018] [:info] [pid 66:tid 139908175906944] mod_wsgi (pid=66): Cleanup interpreter ''.
+[Wed Apr 04 10:03:06.407867 2018] [:info] [pid 66:tid 139908175906944] mod_wsgi (pid=66): Terminating Python.
+[Wed Apr 04 10:03:06.410624 2018] [:info] [pid 66:tid 139908175906944] mod_wsgi (pid=66): Python has shutdown.
+[Wed Apr 04 10:03:07.404911 2018] [:info] [pid 64:tid 139908175906944] mod_wsgi (pid=64): Destroying interpreters.
+[Wed Apr 04 10:03:07.404981 2018] [:info] [pid 64:tid 139908175906944] mod_wsgi (pid=64): Cleanup interpreter ''.
+[Wed Apr 04 10:03:07.409411 2018] [:info] [pid 64:tid 139908175906944] mod_wsgi (pid=64): Terminating Python.
+[Wed Apr 04 10:03:07.412309 2018] [:info] [pid 64:tid 139908175906944] mod_wsgi (pid=64): Python has shutdown.
+[Wed Apr 04 10:03:08.405320 2018] [:info] [pid 67:tid 139908175906944] mod_wsgi (pid=67): Destroying interpreters.
+[Wed Apr 04 10:03:08.405392 2018] [:info] [pid 67:tid 139908175906944] mod_wsgi (pid=67): Cleanup interpreter ''.
+[Wed Apr 04 10:03:08.409261 2018] [:info] [pid 67:tid 139908175906944] mod_wsgi (pid=67): Terminating Python.
+[Wed Apr 04 10:03:08.411788 2018] [:info] [pid 67:tid 139908175906944] mod_wsgi (pid=67): Python has shutdown.
+[Wed Apr 04 10:03:34.894480 2018] [:info] [pid 65:tid 139908175906944] mod_wsgi (pid=65): Destroying interpreters.
+[Wed Apr 04 10:03:34.902721 2018] [:info] [pid 65:tid 139908175906944] mod_wsgi (pid=65): Cleanup interpreter ''.
+[Wed Apr 04 10:03:34.902693 2018] [:info] [pid 62:tid 139908175906944] mod_wsgi (pid=62): Destroying interpreters.
+[Wed Apr 04 10:03:34.906749 2018] [:info] [pid 62:tid 139908175906944] mod_wsgi (pid=62): Cleanup interpreter ''.
+[Wed Apr 04 10:03:34.922065 2018] [:info] [pid 62:tid 139908175906944] mod_wsgi (pid=62): Terminating Python.
+[Wed Apr 04 10:03:34.929644 2018] [:info] [pid 65:tid 139908175906944] mod_wsgi (pid=65): Terminating Python.
+[Wed Apr 04 10:03:34.932206 2018] [:info] [pid 62:tid 139908175906944] mod_wsgi (pid=62): Python has shutdown.
+[Wed Apr 04 10:03:34.934015 2018] [:info] [pid 65:tid 139908175906944] mod_wsgi (pid=65): Python has shutdown.
+[Wed Apr 04 10:03:34.976818 2018] [core:info] [pid 26:tid 139908175906944] AH00096: removed PID file /run/oio/sds/OPENIO-ecd-0-httpd.pid (pid=26)
+[Wed Apr 04 10:03:34.976844 2018] [mpm_worker:notice] [pid 26:tid 139908175906944] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 10:03:34.987937 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Shutdown requested 'ecd-0'.
+[Wed Apr 04 10:03:34.988046 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Stopping process 'ecd-0'.
+[Wed Apr 04 10:03:34.988060 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Destroying interpreters.
+[Wed Apr 04 10:03:34.988066 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Cleanup interpreter ''.
+[Wed Apr 04 10:03:34.988958 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Shutdown requested 'ecd-0'.
+[Wed Apr 04 10:03:34.989064 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Stopping process 'ecd-0'.
+[Wed Apr 04 10:03:34.989094 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Destroying interpreters.
+[Wed Apr 04 10:03:34.989109 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Cleanup interpreter ''.
+[Wed Apr 04 10:03:34.992094 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Terminating Python.
+[Wed Apr 04 10:03:34.993261 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Terminating Python.
+[Wed Apr 04 10:03:34.995092 2018] [:info] [pid 60:tid 139908175906944] mod_wsgi (pid=60): Python has shutdown.
+[Wed Apr 04 10:03:34.996539 2018] [:info] [pid 59:tid 139908175906944] mod_wsgi (pid=59): Python has shutdown.
+[Wed Apr 04 10:03:39.088420 2018] [mpm_worker:notice] [pid 333:tid 140198648076416] AH00292: Apache/2.4.6 (CentOS) mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Wed Apr 04 10:03:39.088580 2018] [mpm_worker:info] [pid 333:tid 140198648076416] AH00293: Server built: Oct 19 2017 20:39:16
+[Wed Apr 04 10:03:39.088605 2018] [core:notice] [pid 333:tid 140198648076416] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/ecd-0/ecd-0-httpd.conf'
+[Wed Apr 04 10:03:39.091421 2018] [:info] [pid 356:tid 140198648076416] mod_wsgi (pid=356): Initializing Python.
+[Wed Apr 04 10:03:39.093487 2018] [:info] [pid 355:tid 140198648076416] mod_wsgi (pid=355): Initializing Python.
+[Wed Apr 04 10:03:39.092534 2018] [:info] [pid 359:tid 140198648076416] mod_wsgi (pid=359): Initializing Python.
+[Wed Apr 04 10:03:39.097026 2018] [:info] [pid 354:tid 140198648076416] mod_wsgi (pid=354): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 10:03:39.099715 2018] [:info] [pid 354:tid 140198648076416] mod_wsgi (pid=354): Initializing Python.
+[Wed Apr 04 10:03:39.107678 2018] [:info] [pid 353:tid 140198648076416] mod_wsgi (pid=353): Starting process 'ecd-0' with threads=1.
+[Wed Apr 04 10:03:39.108864 2018] [:info] [pid 353:tid 140198648076416] mod_wsgi (pid=353): Initializing Python.
+[Wed Apr 04 10:03:39.127853 2018] [:info] [pid 357:tid 140198648076416] mod_wsgi (pid=357): Initializing Python.
+[Wed Apr 04 10:03:39.128279 2018] [:info] [pid 358:tid 140198648076416] mod_wsgi (pid=358): Initializing Python.
+[Wed Apr 04 10:03:39.215517 2018] [:info] [pid 356:tid 140198648076416] mod_wsgi (pid=356): Attach interpreter ''.
+[Wed Apr 04 10:03:39.229545 2018] [:info] [pid 355:tid 140198648076416] mod_wsgi (pid=355): Attach interpreter ''.
+[Wed Apr 04 10:03:39.225991 2018] [:info] [pid 354:tid 140198648076416] mod_wsgi (pid=354): Attach interpreter ''.
+[Wed Apr 04 10:03:39.226342 2018] [:info] [pid 359:tid 140198648076416] mod_wsgi (pid=359): Attach interpreter ''.
+[Wed Apr 04 10:03:39.243469 2018] [:info] [pid 353:tid 140198648076416] mod_wsgi (pid=353): Attach interpreter ''.
+[Wed Apr 04 10:03:39.248105 2018] [:info] [pid 358:tid 140198648076416] mod_wsgi (pid=358): Attach interpreter ''.
+[Wed Apr 04 10:03:39.252356 2018] [:info] [pid 357:tid 140198648076416] mod_wsgi (pid=357): Attach interpreter ''.
+[Wed Apr 04 10:03:40.089469 2018] [:info] [pid 357:tid 140198648076416] mod_wsgi (pid=357): Destroying interpreters.
+[Wed Apr 04 10:03:40.089529 2018] [:info] [pid 357:tid 140198648076416] mod_wsgi (pid=357): Cleanup interpreter ''.
+[Wed Apr 04 10:03:40.093233 2018] [:info] [pid 357:tid 140198648076416] mod_wsgi (pid=357): Terminating Python.
+[Wed Apr 04 10:03:40.096241 2018] [:info] [pid 357:tid 140198648076416] mod_wsgi (pid=357): Python has shutdown.
+[Wed Apr 04 10:03:41.090589 2018] [:info] [pid 356:tid 140198648076416] mod_wsgi (pid=356): Destroying interpreters.
+[Wed Apr 04 10:03:41.090650 2018] [:info] [pid 356:tid 140198648076416] mod_wsgi (pid=356): Cleanup interpreter ''.
+[Wed Apr 04 10:03:41.094823 2018] [:info] [pid 356:tid 140198648076416] mod_wsgi (pid=356): Terminating Python.
+[Wed Apr 04 10:03:41.098226 2018] [:info] [pid 356:tid 140198648076416] mod_wsgi (pid=356): Python has shutdown.
+[Wed Apr 04 10:03:42.093522 2018] [:info] [pid 358:tid 140198648076416] mod_wsgi (pid=358): Destroying interpreters.
+[Wed Apr 04 10:03:42.093587 2018] [:info] [pid 358:tid 140198648076416] mod_wsgi (pid=358): Cleanup interpreter ''.
+[Wed Apr 04 10:03:42.101209 2018] [:info] [pid 358:tid 140198648076416] mod_wsgi (pid=358): Terminating Python.
+[Wed Apr 04 10:03:42.103994 2018] [:info] [pid 358:tid 140198648076416] mod_wsgi (pid=358): Python has shutdown.

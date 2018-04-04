@@ -1123,3 +1123,15 @@
 [Tue Apr 03 16:22:00.821370 2018] [mpm_worker:notice] [pid 28:tid 140284007008384] AH00295: caught SIGTERM, shutting down
 [Tue Apr 03 16:24:16.566605 2018] [mpm_worker:notice] [pid 36:tid 140657758800000] AH00292: Apache/2.4.6 (CentOS) configured -- resuming normal operations
 [Tue Apr 03 16:24:16.568207 2018] [core:notice] [pid 36:tid 140657758800000] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/rawx-0/rawx-0-httpd.conf'
+[Wed Apr 04 09:24:11.291195 2018] [mpm_worker:notice] [pid 36:tid 140657758800000] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 09:25:59.050598 2018] [mpm_worker:notice] [pid 33:tid 139820836407424] AH00292: Apache/2.4.6 (CentOS) configured -- resuming normal operations
+[Wed Apr 04 09:25:59.050706 2018] [core:notice] [pid 33:tid 139820836407424] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/rawx-0/rawx-0-httpd.conf'
+[Wed Apr 04 09:26:28.461899 2018] [mpm_worker:notice] [pid 33:tid 139820836407424] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 09:26:33.802117 2018] [mpm_worker:notice] [pid 335:tid 140711433009280] AH00292: Apache/2.4.6 (CentOS) configured -- resuming normal operations
+[Wed Apr 04 09:26:33.802277 2018] [core:notice] [pid 335:tid 140711433009280] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/rawx-0/rawx-0-httpd.conf'
+[Wed Apr 04 10:02:42.434304 2018] [mpm_worker:notice] [pid 335:tid 140711433009280] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 10:03:05.706728 2018] [mpm_worker:notice] [pid 32:tid 139968676710528] AH00292: Apache/2.4.6 (CentOS) configured -- resuming normal operations
+[Wed Apr 04 10:03:05.706881 2018] [core:notice] [pid 32:tid 139968676710528] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/rawx-0/rawx-0-httpd.conf'
+[Wed Apr 04 10:03:34.976693 2018] [mpm_worker:notice] [pid 32:tid 139968676710528] AH00295: caught SIGTERM, shutting down
+[Wed Apr 04 10:03:39.532890 2018] [mpm_worker:notice] [pid 338:tid 140386130835584] AH00292: Apache/2.4.6 (CentOS) configured -- resuming normal operations
+[Wed Apr 04 10:03:39.536061 2018] [core:notice] [pid 338:tid 140386130835584] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND -f /etc/oio/sds/OPENIO/rawx-0/rawx-0-httpd.conf'
