@@ -55,16 +55,20 @@ $ docker-compose stop
 ```
 
 
-#### Nettoyer les logs qui datent de plus 30 jours
+#### Elastic curator
+Afin de maintenir notre infrastructures propres et de reduire le temps de réponse des requêtes, il important de procéder fréquemment aux nettoyages de nos index, car ces derniers consomment  beaucoup de ressources (CPU,RAM, disques).
 
-il existe 2 manières de supprimer les indices des logs:
+Elastic curator permet de supprimer des données suivant certains caractères, il existe 2 manières pour le faire:
 
-- Par ligne de commande, en tapant la commande suivante
+##### Curator_cli
+
+- supprimer les données qui datent de plus de 10 jours
 ```
 $ curator_cli --host 127.0.0.1 delete_indices --filter_list '{"filtertype":"age","source":"creation_date","timestring":"%Y.%m.%d","unit":"days","unit_count":10,"direction":"older"}'
 
 ```
 - ou à partir de fichier de configuration
+##### Action file
 
 le fichier `curator.yml` contenant les informations sur le cluster elasticsearch
 
