@@ -61,7 +61,8 @@ il existe 2 manières de supprimer les indices des logs:
 
 - Par ligne de commande, en tapant la commande suivante
 ```
-$ /usr/bin/curator --host 127.0.0.1 delete indices --older-than 30 --time-unit days --timestring '%Y.%m.%d'
+$ curator_cli --host 127.0.0.1 delete_indices --filter_list '{"filtertype":"age","source":"creation_date","timestring":"%Y.%m.%d","unit":"days","unit_count":10,"direction":"older"}'
+
 ```
 - ou à partir de fichier de configuration
 
@@ -99,26 +100,39 @@ actions:
   1:
     action: delete_indices
     description: >-
-      Delete indices older than 10 days (based on index access-oio), for logstash-
-      prefixed indices. Ignore the error if the filter does not result in an
-      actionable list of indices (ignore_empty_list) and exit cleanly.
+      Delete indices older than 30 days based on oio- prefixed indices
     options:
       ignore_empty_list: True
       disable_action: True
     filters:
     - filtertype: pattern
       kind: prefix
-      value: logstash-
+      value: oio-
     - filtertype: age
-      source: access-oio
-      direction: older
+      source: creation_date
       timestring: '%Y.%m.%d'
       unit: days
       unit_count: 30
+      direction: older
+  2:
+    action: delete_indices
+    description: >-
+      Delete indices when space raise 100G, based on oio- prefixed indices.
+    options:
+      ignore_empty_list: True
+      disable_action: True
+    filters:
+    - filtertype: space
+      disk_space: 100
+      use_age: True
+      source: creation_date
+    - filtertype: pattern
+      kind: prefix
+      value: oio-
 ```
 
 ```
-$ /usr/bin/curator ./delete_indices.yml --config ./curator.yml --dry-run
+$ /usr/bin/curator ./delete_indices.yml --config ./curator.yml
 ```
 
 --------------

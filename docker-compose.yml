@@ -12,6 +12,7 @@ services:
     volumes:
       - "./elk/elasticsearch/data:/var/lib/elasticsearch"
       - "./elk/elasticsearch/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml"
+      - "./elk/elasticsearch/curator:/opt/elasticsearch-curator"
       - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
       - "./elk/kibana/config:/opt/kibana/config"
       - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
