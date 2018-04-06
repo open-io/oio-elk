@@ -23,10 +23,12 @@ services:
       - net
     deploy:
       resources:
-        
         limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
           cpus: '2'
-          memory: 2048G
+          memory: 8G
   filebeat:
       build:
         context: ./filebeat
