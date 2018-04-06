@@ -17,18 +17,18 @@ services:
       - "./elk/kibana/config:/opt/kibana/config"
       - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
       - "./elk/logstash/conf.d:/etc/logstash/conf.d"
-      #- ./elk/logstash/pipeline:/usr/share/logstash/pipeline: ro
+
     restart: always
     networks:
       - net
     deploy:
       resources:
         limits:
-          cpus: '4'
-          memory: 8G
+          cpus: '2'
+          memory: 1G
         reservations:
           cpus: '2'
-          memory: 8G
+          memory: 1G
   filebeat:
       build:
         context: ./filebeat
@@ -54,8 +54,3 @@ services:
 networks:
   net:
     driver: bridge
-# volumes:
-#   - type: bind
-#     name: data-log
-#     source: ./openio/log/oio/sds/OPENIO
-#  data-log: ./openio/log/oio/sds/OPENIO
