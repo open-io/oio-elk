@@ -47,4 +47,4 @@ services:
       - net
 networks:
   net:
-    driver: overlay
+    driver: bridge
