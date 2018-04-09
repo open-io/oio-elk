@@ -21,14 +21,8 @@ services:
     restart: always
     networks:
       - net
-    deploy:
-      resources:
-        limits:
-          cpus: '2'
-          memory: '1G'
-        reservations:
-          cpus: '2'
-          memory: '1G'
+    environment:
+      - ES_JAVA_OPTS = ${ES_JAVA_OPTS}
   filebeat:
       build:
         context: ./filebeat
@@ -53,4 +47,4 @@ services:
       - net
 networks:
   net:
-    driver: bridge
+    driver: overlay
