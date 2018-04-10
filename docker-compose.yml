@@ -1,5 +1,5 @@
 # ELK version 6.2.2
-version: '3'
+version: '2'
 services:
   elk:
     build:
@@ -11,18 +11,18 @@ services:
       - "5044:5044"
     volumes:
       - "./elk/elasticsearch/data:/var/lib/elasticsearch"
-      - "./elk/elasticsearch/config:/opt/elasticsearch/config"
+      - "./elk/elasticsearch/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml"
       - "./elk/elasticsearch/curator:/opt/elasticsearch-curator"
       - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
       - "./elk/kibana/config:/opt/kibana/config"
       - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
       - "./elk/logstash/conf.d:/etc/logstash/conf.d"
-
     restart: always
     networks:
-      - net
+      - ne
+    cpuset: 0,1
     environment:
-      - ES_JAVA_OPTS = ${ES_JAVA_OPTS}
+      - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
   filebeat:
       build:
         context: ./filebeat
@@ -33,7 +33,6 @@ services:
       restart: always
       networks:
         - net
-
   openio-sds:
     build:
       context: ./openio

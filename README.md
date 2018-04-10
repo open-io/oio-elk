@@ -125,14 +125,14 @@ The file `delete_indices.yml` containing actions to do
        value: oio-
  ```
 
- ```
+```
  $ /usr/bin/curator ./delete_indices.yml --config ./curator.yml
- ```
+```
 
 #### Activate openio/sds log on container
- ```
+```
  $ vi /etc/rsyslog.conf
- ```
+```
 
 Add the following line juste after the line containing "`$ModLoad imuxsock`"  
 `input(type="imuxsock" Socket="/dev/log" CreatePath="on")`  
@@ -140,6 +140,7 @@ Add the following line juste after the line containing "`$ModLoad imuxsock`"
 
 * Now restart services
 
-  ```
-  $ gridinit_cmd restart
- ```
+```
+$ gridinit_cmd restart
+
+```

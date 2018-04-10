@@ -2,7 +2,7 @@ FROM sebp/elk
 
 RUN /opt/logstash/bin/logstash-plugin install logstash-input-beats && \
     /opt/elasticsearch/bin/elasticsearch-plugin install ingest-geoip
-
+USER root
 ## Installation de Elasticsearch curator
 RUN apt-get install wget && \
 wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | apt-key add - && \
