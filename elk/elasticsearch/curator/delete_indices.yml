@@ -21,7 +21,7 @@ actions:
       source: creation_date
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: 30
+      unit_count: 2
       direction: older
   2:
     action: delete_indices
@@ -32,7 +32,7 @@ actions:
       disable_action: False
     filters:
     - filtertype: space
-      disk_space: 100
+      disk_space: 1
       use_age: True
       source: creation_date
     - filtertype: pattern

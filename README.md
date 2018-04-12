@@ -43,9 +43,8 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
  $ docker-compose up -d
  ```
 _____________________________________________________________________________________
-# How to delete data with Elastic curator
+# How manage data retention with Elastic curator
 
-#### Elastic curator
  In order to keep our infrastructures clean and to reduce the response time of requests, it is important to clean our indexes frequently, because they consume a lot of resources (CPU, RAM, disks).
 
  Elastic curator allows you to delete data according to certain characters, there are 2 ways to do this:

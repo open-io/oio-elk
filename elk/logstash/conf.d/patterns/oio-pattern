@@ -1,4 +1,4 @@
-INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_NAME:servicetype},%{NUMBER:num}
+  INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_NAME:servicetype},%{NUMBER:num}
 USER_ID ([0-9a-zA-Z]*|-)
 SESSION_ID [0-9A-F]*
 SERVICE_NAME [a-zA-Z0-9._-]+
@@ -49,7 +49,7 @@ ACCOUNT_LOG %{OIO_COMMON_HEADER} ((%{SERVICE_NAME:request_type} %{NUMBER:request
 # pattern de redis
 REDIS_HEADER %{NUMBER:process_id}:[A-Z]
 REDISTIMESTAMP %{MONTHDAY} %{MONTH} %{TIME}
-REDIS_LOG (%{REDIS_HEADER} %{REDISTIMESTAMP:log_timestamp} %{GREEDYDATA:redis_mesage})|%{GREEDYDATA}
+REDIS_LOG (%{REDIS_HEADER} %{REDISTIMESTAMP:redis_log_timestamp} %{GREEDYDATA:redis_mesage})|%{GREEDYDATA}
 
 
 # Pattern errosrs log

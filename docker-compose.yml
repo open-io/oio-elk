@@ -1,5 +1,5 @@
 # ELK version 6.2.2
-version: '2'
+version: '3'
 services:
   elk:
     build:
@@ -12,24 +12,23 @@ services:
     volumes:
       - "./elk/elasticsearch/data:/var/lib/elasticsearch"
       - "./elk/elasticsearch/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml"
-      - "./elk/elasticsearch/curator:/opt/elasticsearch-curator"
+      - "./elk/elasticsearch/curator:/opt/elasticsearch/curator"
       - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
       - "./elk/kibana/config:/opt/kibana/config"
-      - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
       - "./elk/logstash/conf.d:/etc/logstash/conf.d"
     restart: always
     networks:
-      - ne
-    cpuset: 0,1
+      - net
+    # cpuset: 0,1
     environment:
       - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
+
   filebeat:
       build:
         context: ./filebeat
       volumes:
         - "./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml"
         - "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
-        - "./elk/logstash/certs/logstash-beats.crt:/etc/pki/tls/certs/logstash-beats.crt"
       restart: always
       networks:
         - net
