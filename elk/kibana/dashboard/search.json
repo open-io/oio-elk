@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "33857ff0-3d82-11e8-a42e-03fdb01f6df2",
+    "_type": "search",
+    "_source": {
+      "title": "List of failure",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"1d918f70-3cc6-11e8-b62b-33bae4406727\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  },\n  \"filter\": [\n    {\n      \"meta\": {\n        \"index\": \"1d918f70-3cc6-11e8-b62b-33bae4406727\",\n        \"type\": \"phrases\",\n        \"key\": \"level.keyword\",\n        \"value\": \"ERROR, ERR\",\n        \"params\": [\n          \"ERROR\",\n          \"ERR\"\n        ],\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null\n      },\n      \"query\": {\n        \"bool\": {\n          \"should\": [\n            {\n              \"match_phrase\": {\n                \"level.keyword\": \"ERROR\"\n              }\n            },\n            {\n              \"match_phrase\": {\n                \"level.keyword\": \"ERR\"\n              }\n            }\n          ],\n          \"minimum_should_match\": 1\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ]\n}"
+      }
+    }
+  }
+]
