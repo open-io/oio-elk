@@ -21,18 +21,18 @@ actions:
       source: creation_date
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: 2
+      unit_count: 30
       direction: older
   2:
     action: delete_indices
     description: >-
-      Delete indices when space raise 100G, based on oio- prefixed indices.
+      Delete indices when space raise 1T, based on oio- prefixed indices.
     options:
       ignore_empty_list: True
       disable_action: False
     filters:
     - filtertype: space
-      disk_space: 1
+      disk_space: 1204
       use_age: True
       source: creation_date
     - filtertype: pattern
