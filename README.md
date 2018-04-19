@@ -42,57 +42,7 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
  ```
  $ docker-compose up -d
  ```
- ____________________________________________________________________________________
-# Import dashboards and visualizations
-Before to import the dashboards and visualizations you need firstly to create a common index for all any log type openio services.
-All index has like prefix `oio-`
 
-## Create a index
-1. Click on **Management** in left side
-2. Click on **Index Pattern**
-3. Define an index pattern
-
- Use the index pattern `oio-*` and click on **Next step**
-
- ![IMAGE ALT TEXT HERE](./pictures/create_index.png)
-
-4. Select **log_timestamp** field  and Click on **Create  index pattern**
-
-   ![IMAGE ALT TEXT HERE](./pictures/create_index_step_2.png)
-
-
-## Import dashboards
-
-
-1. Click on **Saved Objects**
-
- ![IMAGE ALT TEXT HERE](./pictures/create_index.png)
-
-2. Click on **Import**
-
- ![IMAGE ALT TEXT HERE](./pictures/create_index_step_2.png)
-
-3. Go to the directory where dashboards and visualizations are located and Select the file named **dashboard.json**
-4. Click on "overwrite all objects"
-
- ![IMAGE ALT TEXT HERE](./pictures/import_dashboard.png)
-
-
-## Import visualizations
-
-1. Repeat the step 1 and 2 of **import dashboard**
-
-2. Go to the directory where dashboards and visualizations are located and Select the file named **visualize.json**
-3. Click on "overwrite all objects"
-
-![IMAGE ALT TEXT HERE](./pictures/import_dashboard_step_2.png)
-
-4. Select the index that you created
-
-![IMAGE ALT TEXT HERE](./pictures/select_index.png)
-
-
-To visualize dashboards click on **dashboards** in the side navigation, and choose the one that you want.
 ___________________________________________________________________________________
 # How manage data retention with Elastic curator
 
