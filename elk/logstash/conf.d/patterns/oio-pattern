@@ -1,4 +1,4 @@
-  INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_NAME:servicetype},%{NUMBER:num}
+INSTANCE_ID %{WORD},%{WORD:namespace},%{SERVICE_NAME:servicetype},%{NUMBER:num}
 USER_ID ([0-9a-zA-Z]*|-)
 SESSION_ID [0-9A-F]*
 SERVICE_NAME [a-zA-Z0-9._-]+
@@ -8,13 +8,21 @@ LOG_TIME (?:%{ISO}|%{TIMESYS})
 SEPARATOR :
 
 OIO_HEADER %{LOG_TIME:log_timestamp} %{GREEDYDATA:host} %{INSTANCE_ID}%{SEPARATOR}?
-OIO_COMMON_HEADER %{OIO_HEADER} (%{LOGLEVEL}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level}
+OIO_COMMON_HEADER %{OIO_HEADER} (%{WORD:loglevel}%{SPACE})?%{NUMBER:process_id} %{WORD:thread_id} %{WORD:domain} %{WORD:level}
+LOG_FAILURE %{OIO_COMMON_HEADER} %{GREEDYDATA:failure_message}
+
+
 
 # Access log
-ACCESS_LOG %{OIO_COMMON_HEADER} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:request_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
+ACCESS_LOG_SUCCESS %{OIO_COMMON_HEADER} %{IP:local_address}:%{NUMBER:local_port} %{IP:remote_address}:%{NUMBER:remote_port} %{WORD:request_type} %{NUMBER:return_code} %{NUMBER:request_time} %{NUMBER:response_size} %{USER_ID:user_id} %{DATA:session_id} %{GREEDYDATA:payload}
+ACCESS_LOG %{ACCESS_LOG_SUCCESS}|%{LOG_FAILURE}|%{GREEDYDATA}
 
 # Debug Log
-DEBUG_LOG %{OIO_COMMON_HEADER} %{GREEDYDATA:payload}
+DEBUG_LOG (%{OIO_COMMON_HEADER} %{GREEDYDATA:payload})|%{GREEDYDATA}
+
+# Pattern account
+ACCOUNT_LOG_SUCCESS %{OIO_COMMON_HEADER} %{SERVICE_NAME:request_type} %{NUMBER:request_time}
+ACCOUNT_LOG %{ACCOUNT_LOG_SUCCESS}|%{LOG_FAILURE}|%{GREEDYDATA}
 
 # Pattern oioswift
 DATAOREMPTY (%{DATA}|-)
@@ -25,9 +33,9 @@ REMOTE_ADDR %{IP:remote_address}|-
 BYTES_RECVD (%{NUMBER:bytes_recvd}|-)
 BYTES_SENT (%{NUMBER:bytes_sent}|-)
 
-SWIFT_LOG_INFO %{OIO_HEADER} %{LOGLEVEL}  %{CLIENT_IP} %{REMOTE_ADDR} %{DATAOREMPTY:datetime} %{WORD:request_type} %{REQUEST_PATH:request_path} %{DATAOREMPTY:protocol} %{NUMBER:return_code} %{SERVICE_NAME:referer} %{GREEDYDATA:user_agent} %{DATAOREMPTY} %{BYTES_RECVD} %{BYTES_SENT} %{DATAOREMPTY:client_etag} %{DATA:transaction_id} %{DATAOREMPTY:headers} %{NUMBER:request_time} %{DATAOREMPTY:source} %{DATAOREMPTY:log_info} %{NUMBER:request_start_time} %{NUMBER:request_end_time} %{DATAOREMPTY:policy_index}
-SWIFT_LOG_NOTICE %{OIO_HEADER} %{LOGLEVEL} %{GREEDYDATA}
-SWIFT_LOG %{SWIFT_LOG_INFO}|%{SWIFT_LOG_NOTICE}
+SWIFT_LOG_SUCCESS %{OIO_HEADER} %{WORD:loglevel}  %{CLIENT_IP} %{REMOTE_ADDR} %{DATAOREMPTY:datetime} %{WORD:request_type} %{REQUEST_PATH:request_path} %{DATAOREMPTY:protocol} %{NUMBER:return_code} %{SERVICE_NAME:referer} %{GREEDYDATA:user_agent} %{DATAOREMPTY} %{BYTES_RECVD} %{BYTES_SENT} %{DATAOREMPTY:client_etag} %{DATA:transaction_id} %{DATAOREMPTY:headers} %{NUMBER:request_time} %{DATAOREMPTY:source} %{DATAOREMPTY:log_info} %{NUMBER:request_start_time} %{NUMBER:request_end_time} %{DATAOREMPTY:policy_index}
+SWIFT_LOG_NOTICE %{OIO_HEADER} %{WORD:loglevel} %{GREEDYDATA:failure_message}
+SWIFT_LOG %{SWIFT_LOG_SUCCESS}|%{SWIFT_LOG_NOTICE}|%{GREEDYDATA}
 
 
 
@@ -38,21 +46,18 @@ PASS pass=%{NUMBER:pass}
 ERRORS errors=%{NUMBER:errors}
 CHUNKS chunks=%{NUMBER:chunks}
 RATE %{NUMBER:rate}/s
-BLOB_INDEXER_LOG %{OIO_COMMON_HEADER} %{TAG} %{ELAPSED} %{PASS} %{ERRORS} %{CHUNKS} %{RATE}
+BLOB_INDEXER_LOG_SUCCESS %{OIO_COMMON_HEADER} %{TAG} %{ELAPSED} %{PASS} %{ERRORS} %{CHUNKS} %{RATE}
+BLOB_INDEXER_LOG  %{BLOB_INDEXER_LOG_SUCCESS}|%{LOG_FAILURE}|%{GREEDYDATA}
 
 
 
-# Pattern account
-ACCOUNT_LOG %{OIO_COMMON_HEADER} ((%{SERVICE_NAME:request_type} %{NUMBER:request_time})|%{GREEDYDATA:account_error__message})
-
-
-# pattern de redis
+# Pattern de redis
 REDIS_HEADER %{NUMBER:process_id}:[A-Z]
 REDISTIMESTAMP %{MONTHDAY} %{MONTH} %{TIME}
 REDIS_LOG (%{REDIS_HEADER} %{REDISTIMESTAMP:redis_log_timestamp} %{GREEDYDATA:redis_mesage})|%{GREEDYDATA}
 
 
-# Pattern errosrs log
+# Pattern errors log
 ERROR_TIMESTAMP \[%{DAY} %{MONTH} %{MONTHDAY} %{TIME} %{YEAR}\]
 SEVERITY \[%{DATA:severity}:%{WORD:loglevel}\]
 PID \[pid %{NUMBER:process_id}:tid %{NUMBER:thread_id}\]

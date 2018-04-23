@@ -38,7 +38,7 @@ services:
     ports:
      - "6007:6007"
     volumes:
-     -    "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
+     - "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
      - "./openio/etc/rsyslog.conf:/etc/rsyslog.conf"
     restart: always
     networks:
