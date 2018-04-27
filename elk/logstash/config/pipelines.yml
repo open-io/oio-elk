@@ -40,7 +40,7 @@
 #
 #   # Internal queuing model, "memory" for legacy in-memory based queuing and
 #   # "persisted" for disk-based acked queueing. Defaults is memory
-#   queue.type: memory
+queue.type: persisted
 #
 #   # If using queue.type: persisted, the page data files size. The queue data consists of
 #   # append-only data files separated into pages. Default is 64mb
@@ -52,7 +52,7 @@
 #
 #   # If using queue.type: persisted, the total capacity of the queue in number of bytes.
 #   # Default is 1024mb or 1gb
-#   queue.max_bytes: 1024mb
+queue.max_bytes: 4g
 #
 #   # If using queue.type: persisted, the maximum number of acked events before forcing a checkpoint
 #   # Default is 1024, 0 for unlimited
@@ -60,7 +60,7 @@
 #
 #   # If using queue.type: persisted, the maximum number of written events before forcing a checkpoint
 #   # Default is 1024, 0 for unlimited
-#   queue.checkpoint.writes: 1024
+queue.checkpoint.writes: 0
 #
 #   # If using queue.type: persisted, the interval in milliseconds when a checkpoint is forced on the head page
 #   # Default is 1000, 0 for no periodic checkpoint.

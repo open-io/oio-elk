@@ -11,7 +11,7 @@
 # https://www.elastic.co/guide/en/elasticsearch/reference/index.html
 #
 # ---------------------------------- Elasticsearch queue size -----------------------------------
-# thread_pool.bulk.queue_size: 2000
+thread_pool.bulk.queue_size: 2000
 
 # ---------------------------------- X-PACK -----------------------------------
 #action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,logs-*,access-*
