@@ -9,7 +9,7 @@ actions:
   1:
     action: delete_indices
     description: >-
-      Delete indices older than 30 days based on oio- prefixed indices
+      Delete indices older than value of environment variable ES_CURATOR_DAYS based on oio- prefixed indices
     options:
       ignore_empty_list: True
       disable_action: False
@@ -18,23 +18,26 @@ actions:
       kind: prefix
       value: oio-
     - filtertype: age
-      source: creation_date
-      timestring: '%Y.%m.%d'
+      source: field_stats
+      field: '@timestamp'
       unit: days
-      unit_count: 30
+      unit_count: ${ES_CURATOR_DAYS}
       direction: older
-  2:
-    action: delete_indices
-    description: >-
-      Delete indices when space raise 1T, based on oio- prefixed indices.
-    options:
-      ignore_empty_list: True
-      disable_action: False
-    filters:
-    - filtertype: space
-      disk_space: 1204
-      use_age: True
-      source: creation_date
-    - filtertype: pattern
-      kind: prefix
-      value: oio-
+
+    # 2:
+    #   action: delete_indices
+    #   description: >-
+    #     Delete indices when space raise value of environment variable ES_CURATOR_DISK_SPACE (Go), based on oio- prefixed indices.
+    #   options:
+    #     ignore_empty_list: True
+    #     disable_action: False
+    #   filters:
+    #   - filtertype: pattern
+    #     kind: regex
+    #     value: oio-*
+    #   - filtertype: space
+    #     disk_space: ${ES_CURATOR_DISK_SPACE}
+    #     use_age: True
+    #     source: name
+    #     timestring: '%Y.%m.%d'
+...

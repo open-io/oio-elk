@@ -20,9 +20,10 @@ services:
     networks:
       - net
     cpu_shares: 25
-    mem_limit: 1g
     environment:
       - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
+      - "ES_CURATOR_DAYS=${ES_CURATOR_DAYS}"
+
 
   filebeat:
       build:

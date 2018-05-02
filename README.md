@@ -104,7 +104,6 @@ The file `delete_indices.yml` containing actions to do
        value: oio-
      - filtertype: age
        source: creation_date
-       timestring: '%Y.%m.%d'
        unit: days
        unit_count: 30
        direction: older
