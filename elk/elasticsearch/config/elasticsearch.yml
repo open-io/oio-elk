@@ -41,7 +41,17 @@
 # Path to log files:
 #
 #path.logs: /path/to/logs
-#
+# Path backup
+
+path.repo: ["/opt/repo_snapshots"]
+
+# cloud:
+#   aws:
+#     access_key: "demo:demo"
+#     secret_key: "DEMO_PASS"
+#     s3:
+#       signer: S3SignerType
+
 # ----------------------------------- Memory -----------------------------------
 #
 # Lock the memory on startup:

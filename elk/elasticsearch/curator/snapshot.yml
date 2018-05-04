@@ -1,0 +1,25 @@
+---
+actions:
+   1:
+    action: snapshot
+    description: >-
+       Create a snapshot ans store indices of the days
+    options:
+      repository: oio_logs_backup
+      name: snapshot-%Y.%m.%d
+      ignore_unavailable: False
+      include_global_state: True
+      partial: False
+      wait_for_completion: True
+      skip_repo_fs_check: False
+      disable_action: False
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: oio-
+    - filtertype: age
+      source: name
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: 1
+      direction: younger

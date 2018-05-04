@@ -11,7 +11,7 @@ services:
       - "5044:5044"
     volumes:
       - "./elk/elasticsearch/data:/var/lib/elasticsearch"
-      - "./elk/elasticsearch/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml"
+      - "./elk/elasticsearch/config/elasticsearch.yml:/etc/elasticsearch/elasticsearch.yml"
       - "./elk/elasticsearch/curator:/opt/elasticsearch/curator"
       - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
       - "./elk/kibana/config:/opt/kibana/config"
