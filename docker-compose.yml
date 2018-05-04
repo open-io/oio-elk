@@ -19,7 +19,7 @@ services:
     restart: always
     networks:
       - net
-    cpu_shares: 25
+    # cpu_shares: 25
     environment:
       - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
       - "ES_CURATOR_DAYS=${ES_CURATOR_DAYS}"

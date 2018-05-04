@@ -3,7 +3,7 @@ actions:
   1:
     action: restore
     description: >-
-      Restore
+      this action permit to restore all logs captured 2018.05.03
     options:
       repository: oio_logs_backup
       name: snapshot-2018.05.03
