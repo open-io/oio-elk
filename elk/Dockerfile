@@ -43,6 +43,14 @@ RUN mkdir /opt/repo_snapshots && \
 
 
 # Installation and configuration of search GUARD
-RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.2-22.1 && \
-    chmod +x /opt/elasticsearch/plugins/search-guard-6/tools/install_demo_configuration.sh && \
-    ./opt/elasticsearch/plugins/search-guard-6/tools/install_demo_configuration.sh && \
+# RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.2-22.1 && \
+#     curl -sL https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-tlstool/1.3/search-guard-tlstool-1.3.tar.gz | tar zx -C /opt/elasticsearch && \
+#     ./opt/elasticsearch/tools/
+#
+#
+#
+# RUN /opt/kibana/bin/kibana-plugin install https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-kibana-plugin/6.2.2-11/search-guard-kibana-plugin-6.2.2-11.zip
+
+
+## Install Sentinl
+RUN opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.2/sentinl-v6.2.2.zip

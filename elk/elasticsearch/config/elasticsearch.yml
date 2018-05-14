@@ -13,7 +13,7 @@
 # ---------------------------------- Elasticsearch bulk queue size -----------------------------------
 thread_pool:
     bulk:
-      queue_size: 2000
+      queue_size: 1000
 
 # ---------------------------------- X-PACK -----------------------------------
 #action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,logs-*,access-*
