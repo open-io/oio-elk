@@ -107,21 +107,7 @@ The file `delete_indices.yml` containing actions to do
        unit: days
        unit_count: 30
        direction: older
-   2:
-     action: delete_indices
-     description: >-
-       Delete indices when space raise 100G, based on oio- prefixed indices.
-     options:
-       ignore_empty_list: True
-       disable_action: True
-     filters:
-     - filtertype: space
-       disk_space: 100
-       use_age: True
-       source: creation_date
-     - filtertype: pattern
-       kind: prefix
-       value: oio-
+
  ```
 
 ```

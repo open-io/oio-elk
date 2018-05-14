@@ -1,12 +1,10 @@
 FROM sebp/elk
 
+
+
 RUN /opt/logstash/bin/logstash-plugin install logstash-input-beats && \
     /opt/elasticsearch/bin/elasticsearch-plugin install ingest-geoip
 
-    # /opt/elasticsearch/bin/elasticsearch-plugin install --batch repository-s3 && \
-    # /opt/elasticsearch/bin/elasticsearch-plugin install cloud-aws && \
-    # /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.access_key && \
-    # /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.secret_key
 
 
 USER root
@@ -26,10 +24,25 @@ RUN mkdir /opt/repo_snapshots && \
     chown -R elasticsearch:elasticsearch /opt/repo_snapshots
 
 
+
+
 # curl -XPUT 'localhost:9200/_snapshot/oio_logs_backup' -H 'Content-Type: application/json' -d '{ "type": "fs", "settings": {"location": "/opt/repo_snapshots","compress": true}}'
 
 # curl -XDELETE 'http://localhost:9200/oio-*?pretty'
 
 
-#  echo "demo:demo" | bin/elasticsearch-keystore add --stdin --force s3.client.default.access_key
-# echo "DEMO_PASS" | bin/elasticsearch-keystore add --stdin --force s3.client.default.secret_key
+## Installation and configuration of aws s3 plugins for snapshot
+
+# RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch repository-s3
+# RUN /opt/elasticsearch/bin/elasticsearch-keystore create && \
+#     # /opt/elasticsearch/bin/elasticsearch-plugin install --batch repository-s3 && \
+#     echo "demo:demo" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.access_key && \
+#     echo "DEMO_PASS" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.secret_key && \
+#     # echo "192.168.1.43:6007" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.endpoint && \
+#     chown root:elasticsearch /etc/elasticsearch/elasticsearch.keystore
+
+
+# Installation and configuration of search GUARD
+RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.2-22.1 && \
+    chmod +x /opt/elasticsearch/plugins/search-guard-6/tools/install_demo_configuration.sh && \
+    ./opt/elasticsearch/plugins/search-guard-6/tools/install_demo_configuration.sh && \

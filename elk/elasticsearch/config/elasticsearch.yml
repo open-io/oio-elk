@@ -10,23 +10,40 @@
 # Please consult the documentation for further information on configuration options:
 # https://www.elastic.co/guide/en/elasticsearch/reference/index.html
 #
-# ---------------------------------- Elasticsearch queue size -----------------------------------
-#thread_pool.bulk.queue_size: 2000
+# ---------------------------------- Elasticsearch bulk queue size -----------------------------------
+thread_pool:
+    bulk:
+      queue_size: 2000
 
 # ---------------------------------- X-PACK -----------------------------------
 #action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,logs-*,access-*
+
+#-------------------------------------------- SEARCH GUARD Configuration ------------------
+# searchguard.enterprise_modules_enabled: false
+# searchguard.allow_unsafe_democertificates: true
+# searchguard.ssl.transport.pemcert_filepath: esnode.pem
+# searchguard.ssl.transport.pemkey_filepath: esnode-key.pem
+# searchguard.ssl.transport.pemtrustedcas_filepath: root-ca.pem
+# searchguard.ssl.transport.enforce_hostname_verification: false
+# searchguard.ssl.http.enabled: true
+# searchguard.ssl.http.pemcert_filepath: esnode.pem
+# searchguard.ssl.http.pemkey_filepath: esnode-key.pem
+# searchguard.ssl.http.pemtrustedcas_filepath: root-ca.pem
+# searchguard.allow_default_init_sgindex: true
+# searchguard.authcz.admin_dn:
+#   - CN=pape,OU=client,O=client,L=test,C=de
 # ---------------------------------- Cluster -----------------------------------
 #
 
 # Use a descriptive name for your cluster:
 #
-#cluster.name: my-application
+cluster.name: ES_CLUSTER
 #
 # ------------------------------------ Node ------------------------------------
 #
 # Use a descriptive name for the node:
 #
-#node.name: node-1
+node.name: master
 #
 # Add custom attributes to the node:
 #
@@ -43,22 +60,25 @@
 #path.logs: /path/to/logs
 # Path backup
 
-path.repo: ["/opt/repo_snapshots"]
-
+# path.repo: ["/opt/repo_snapshots"]
+# s3.client.default.access_key: "demo:demo"
+# s3.client.default.secret_key: "DEMO_PASS"
+# s3.client.default.endpoint: 192.168.1.43:6007
+# s3.client.default.protocol: "http"
+#s3.client.default.region: "US"
+#s3.client.default.server_side_encryption: "false"
+#s3.client.default.region: ""
 # cloud:
 #   aws:
 #     access_key: "demo:demo"
 #     secret_key: "DEMO_PASS"
-#     s3:
-#       signer: S3SignerType
 
 # ----------------------------------- Memory -----------------------------------
 #
 # Lock the memory on startup:
 #
 
-
-#bootstrap.memory_lock: true
+bootstrap.memory_lock: true
 #
 # Make sure that the heap size is set to about half the memory available
 # on the system and that the owner of the process is allowed to use this
