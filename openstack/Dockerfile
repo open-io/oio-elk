@@ -1,0 +1,1 @@
+FROM openio/openstack-keystone
