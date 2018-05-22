@@ -11,9 +11,9 @@
 # https://www.elastic.co/guide/en/elasticsearch/reference/index.html
 #
 # ---------------------------------- Elasticsearch bulk queue size -----------------------------------
-thread_pool:
-    bulk:
-      queue_size: 1000
+# thread_pool:
+#     bulk:
+#       queue_size: 1000
 
 # ---------------------------------- X-PACK -----------------------------------
 #action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,logs-*,access-*
@@ -58,20 +58,16 @@ node.name: master
 # Path to log files:
 #
 #path.logs: /path/to/logs
-# Path backup
 
-# path.repo: ["/opt/repo_snapshots"]
-# s3.client.default.access_key: "demo:demo"
-# s3.client.default.secret_key: "DEMO_PASS"
-# s3.client.default.endpoint: 192.168.1.43:6007
-# s3.client.default.protocol: "http"
-#s3.client.default.region: "US"
-#s3.client.default.server_side_encryption: "false"
-#s3.client.default.region: ""
-# cloud:
-#   aws:
-#     access_key: "demo:demo"
-#     secret_key: "DEMO_PASS"
+# Path backup
+path.repo: ["/opt/repo_snapshots"]
+
+
+
+#-------------------------------- AWS S3 configuration--------------------------
+s3.client.default.endpoint: 192.168.1.43:6007
+s3.client.default.protocol: "http"
+
 
 # ----------------------------------- Memory -----------------------------------
 #

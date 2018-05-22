@@ -1,4 +1,4 @@
-# ELK version 6.2.2
+# ELK version 6.2.4
 version: '2'
 services:
   elk:
@@ -12,7 +12,7 @@ services:
     volumes:
       - "./elk/elasticsearch/data:/var/lib/elasticsearch"
       - "./elk/elasticsearch/config/elasticsearch.yml:/opt/elasticsearch/config/elasticsearch.yml"
-      # - "./elk/elasticsearch/config/jvm.options:/etc/elasticsearch/jvm.options"
+      - "./elk/elasticsearch/config/jvm.options:/opt/elasticsearch/jvm.options"
       # - "./elk/kibana/logo/kibana.svg:/opt/kibana/src/ui/public/images/kibana.svg:rw"
       - "./elk/elasticsearch/curator:/opt/elasticsearch/curator"
       - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
@@ -21,7 +21,6 @@ services:
     restart: always
     networks:
       - net
-    # cpu_shares: 25
     environment:
       - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
       - "ES_CURATOR_DAYS=${ES_CURATOR_DAYS}"
@@ -47,6 +46,26 @@ services:
     restart: always
     networks:
       - net
+    environment:
+      - "KEYSTONE_ENABLED=true"
+      - "KEYSTONE_URI=${IPADDR}:5000"
+      - "KEYSTONE_URL=${IPADDR}:35357"
+      - "REGION=us-east-1"
+
+  openstack-keystone:
+    build:
+      context: ./openstack
+    ports:
+      - "5000:5000"
+      - "35357:35357"
+    restart: always
+    networks:
+      - net
+    environment:
+      - "IPADDR=${IPADDR}"
+      - "OS_IDENTITY_SERVICE_REGION=us-east-1"
+      - "OS_OBJECTSTORE_SERVICE_REGION=us-east-1"
+
 networks:
   net:
     driver: bridge

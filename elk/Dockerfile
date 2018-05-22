@@ -1,4 +1,4 @@
-FROM sebp/elk
+FROM sebp/elk:624
 
 
 
@@ -21,36 +21,25 @@ RUN apt-get install wget && \
 
 
 RUN mkdir /opt/repo_snapshots && \
-    chown -R elasticsearch:elasticsearch /opt/repo_snapshots
+      chown -R elasticsearch:elasticsearch /opt/repo_snapshots
 
 
-
-
-# curl -XPUT 'localhost:9200/_snapshot/oio_logs_backup' -H 'Content-Type: application/json' -d '{ "type": "fs", "settings": {"location": "/opt/repo_snapshots","compress": true}}'
-
-# curl -XDELETE 'http://localhost:9200/oio-*?pretty'
 
 
 ## Installation and configuration of aws s3 plugins for snapshot
 
-# RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch repository-s3
-# RUN /opt/elasticsearch/bin/elasticsearch-keystore create && \
-#     # /opt/elasticsearch/bin/elasticsearch-plugin install --batch repository-s3 && \
-#     echo "demo:demo" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.access_key && \
-#     echo "DEMO_PASS" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.secret_key && \
-#     # echo "192.168.1.43:6007" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.endpoint && \
-#     chown root:elasticsearch /etc/elasticsearch/elasticsearch.keystore
+RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch repository-s3
+RUN /opt/elasticsearch/bin/elasticsearch-keystore create && \
+    # echo "cbcf7f62497845518ddf573049d885ef" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.access_key && \
+    # echo "a241d07e9db64f68a38d68868ed42712" | /opt/elasticsearch/bin/elasticsearch-keystore add s3.client.default.secret_key && \
+    chown root:elasticsearch /etc/elasticsearch/elasticsearch.keystore
 
 
 # Installation and configuration of search GUARD
 # RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.2-22.1 && \
 #     curl -sL https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-tlstool/1.3/search-guard-tlstool-1.3.tar.gz | tar zx -C /opt/elasticsearch && \
-#     ./opt/elasticsearch/tools/
-#
-#
-#
 # RUN /opt/kibana/bin/kibana-plugin install https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-kibana-plugin/6.2.2-11/search-guard-kibana-plugin-6.2.2-11.zip
 
 
 ## Install Sentinl
-RUN opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.2/sentinl-v6.2.2.zip
+# RUN opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.3-2/sentinl-v6.2.2.zip

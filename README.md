@@ -2,9 +2,9 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
 ----------------------
 
 > les diiférentes versions des outils utilisés:  
-- ELK : version 6.6.2   
-- Filebeat : Version 6.6.2  
-- Openio/sds: version 16.04
+- ELK : version 6.2.4   
+- Filebeat : Version 6.2.4  
+- Openio/sds: version 17.04
 
 
 #### Requirement
@@ -129,3 +129,19 @@ Add the following line juste after the line containing "`$ModLoad imuxsock`"
 $ gridinit_cmd restart
 
 ```
+
+
+curl -XPUT 'localhost:9200/_snapshot/oio_logs_backup' -H 'Content-Type: application/json' -d '{ "type": "fs", "settings": {"location": "/opt/repo_snapshots","compress": true}}'
+
+curl -XPUT 'localhost:9200/_snapshot/s3_repository' -H 'Content-Type: application/json' -d'
+{
+  "type": "s3",
+  "settings": {
+    "bucket": "test6",
+    "region": "us-east-1",
+    "server_side_encryption": false,
+    "client": "default"
+  }
+}'
+
+curl -XDELETE 'http://localhost:9200/oio-*?pretty'

@@ -1,18 +1,41 @@
-# Default Kibana 5 file from https://github.com/elastic/kibana/blob/master/config/kibana.yml
-#
-# Kibana is served by a back end server. This setting specifies the port to use.
-#server.port: 5601
 
-elasticsearch.username: "kibanaserver"
-elasticsearch.password: "kibanaserver"
-elasticsearch.ssl.verificationMode: none
+#-------------------------------SENTINL Configuration----------------------------------
+
+# sentinl:
+  # es:
+  #   host: 'localhost'
+  #   port: 9200
+  #   timefield: '@timestamp'
+  #   default_index: watcher
+  #   type: sentinl-watcher
+  #   alarm_index: watcher_alarms
+  #   alarm_type: sentinl-alarm
+  #   script_type: sentinl-script
+  # settings:
+  #   slack:
+  #     active: true
+  #     username: 'elk-alerting'
+  #     hook: 'https://hooks.slack.com/services/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'
+  #     channel: '#elk-alerting'
+    # email:
+    #     active: true
+    #     host: smtp.gmail.com
+    #     user: pacobadiane17@gmail.com
+    #     password: mdp
+    #     ssl: true
+    # report:
+    #   active: true
+    #   executable_path: '/usr/bin/chromium'
+
+#-----------------------------------------------------------------------------------------------
+#server.port: 5601
 
 # Specifies the address to which the Kibana server will bind. IP addresses and host names are both valid values.
 # The default is 'localhost', which usually means remote machines will not be able to connect.
 # To allow connections from remote users, set this parameter to a non-loopback address.
 server.host: "0.0.0.0"
-#server.name: kibana
-#elasticsearch.url: http://localhost:9200
+server.name: kibana
+elasticsearch.url: http://localhost:9200
 # elasticsearch.username: "Kibana"
 # elasticsearch.password: "changeme"
 #xpack.security.enabled: false
@@ -25,11 +48,6 @@ server.host: "0.0.0.0"
 # The maximum payload size in bytes for incoming server requests.
 #server.maxPayloadBytes: 1048576
 
-# The Kibana server's name.  This is used for display purposes.
-#server.name: "your-hostname"
-
-# The URL of the Elasticsearch instance to use for all your queries.
-#elasticsearch.url: "http://localhost:9200"
 
 # When this setting’s value is true Kibana uses the hostname specified in the server.host
 # setting. When the value of this setting is false, Kibana uses the hostname of the host
