@@ -5,8 +5,8 @@ actions:
     description: >-
       this action permit to restore all logs captured 2018.05.03
     options:
-      repository: oio_logs_backup
-      name: snapshot-2018.05.03
+      repository: my_s3_repository
+      name: snapshot-1-day
       indices:
       include_aliases: False
       ignore_unavailable: False

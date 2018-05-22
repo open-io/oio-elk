@@ -5,8 +5,8 @@ actions:
     description: >-
        This action snapshot oio- prefixed younger that 1 day and can be identify with the day where log are snapshoted (snapshot-YEAR.MOTH.DAY)
     options:
-      repository: oio_logs_backup
-      name: snapshot-%Y.%m.%d
+      repository: my_s3_repository
+      name: snapshot-1-day
       ignore_unavailable: False
       include_global_state: True
       partial: False
@@ -21,7 +21,7 @@ actions:
       source: name
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: 1
+      unit_count: 7
       direction: younger
    2:
      action: snapshot
@@ -29,7 +29,7 @@ actions:
         This action snapshot oio- prefixed older that 1 day and can be identify with the day where log are snapshoted (snapshot-YEAR.MOTH.DAY)
         By default this action is diseable, it is very usefull when we want snapshot all logs.
      options:
-       repository: oio_logs_backup
+       repository: my_s3_repository
        name: snapshot-%Y.%m.%d
        ignore_unavailable: False
        include_global_state: True
