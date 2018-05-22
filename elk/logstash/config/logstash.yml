@@ -46,7 +46,7 @@
 # This defaults to the number of the host's CPU cores.
 #
 # pipeline.workers: 2
-pipeline.output.workers: 2
+# pipeline.output.workers: 2
 #
 # How many events to retrieve from inputs before sending to filters+workers
 #

@@ -46,25 +46,25 @@ services:
     restart: always
     networks:
       - net
-    environment:
-      - "KEYSTONE_ENABLED=true"
-      - "KEYSTONE_URI=${IPADDR}:5000"
-      - "KEYSTONE_URL=${IPADDR}:35357"
-      - "REGION=us-east-1"
+    # environment:
+    #   - "KEYSTONE_ENABLED=true"
+    #   - "KEYSTONE_URI=${IPADDR}:5000"
+    #   - "KEYSTONE_URL=${IPADDR}:35357"
+    #   - "REGION=us-east-1"
 
-  openstack-keystone:
-    build:
-      context: ./openstack
-    ports:
-      - "5000:5000"
-      - "35357:35357"
-    restart: always
-    networks:
-      - net
-    environment:
-      - "IPADDR=${IPADDR}"
-      - "OS_IDENTITY_SERVICE_REGION=us-east-1"
-      - "OS_OBJECTSTORE_SERVICE_REGION=us-east-1"
+  # openstack-keystone:
+  #   build:
+  #     context: ./openstack
+  #   ports:
+  #     - "5000:5000"
+  #     - "35357:35357"
+  #   restart: always
+  #   networks:
+  #     - net
+  #   environment:
+  #     - "IPADDR=${IPADDR}"
+  #     - "OS_IDENTITY_SERVICE_REGION=us-east-1"
+  #     - "OS_OBJECTSTORE_SERVICE_REGION=us-east-1"
 
 networks:
   net:
