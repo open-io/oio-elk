@@ -7,6 +7,7 @@ filebeat.prospectors:
   enabled: true
   paths:
     - /var/log/oio/sds/OPENIO/oioswift-*/oioswift-*.log*
+  exclude_files: ['\.gz$']
   fields:
     name_log: oio-swift
 - type: log
@@ -14,6 +15,7 @@ filebeat.prospectors:
   paths:
     - /var/log/oio/sds/OPENIO/*/*.access*
     - /var/log/oio/sds/OPENIO/rawx-*/*-access.log*
+  exclude_files: ['\.gz$']
   fields:
     name_log: oio-access
 - type: log
@@ -23,30 +25,35 @@ filebeat.prospectors:
     - /var/log/oio/sds/OPENIO/conscience*/*.log*
     - /var/log/oio/sds/OPENIO/oioproxy-*/*.log*
     - /var/log/oio/sds/OPENIO/oio-event-agent*/*.log*
+  exclude_files: ['\.gz$']
   fields:
     name_log: oio-logs
 - type: log
   enabled: true
   paths:
     - /var/log/oio/sds/OPENIO/oio-blob-indexer-*/*.log*
+  exclude_files: ['\.gz$']
   fields:
     name_log: oio-blob-indexer
 - type: log
   enabled: true
   paths:
     - /var/log/oio/sds/OPENIO/account-*/*.log*
+  exclude_files: ['\.gz$']
   fields:
     name_log: oio-account
 - type: log
   enabled: true
   paths:
     - /var/log/oio/sds/OPENIO/redis-*/*.log*
+  exclude_files: ['\.gz$']
   fields:
     name_log: oio-redis
 - type: log
   enabled: true
   paths:
     - /var/log/oio/sds/OPENIO/*/*-errors.log*
+  exclude_files: ['\.gz$']
   fields:
     name_log: oio-errors
 #----------------------------- Logstash output --------------------------------
