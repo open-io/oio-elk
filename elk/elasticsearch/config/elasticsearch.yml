@@ -13,7 +13,7 @@
 # ---------------------------------- Elasticsearch bulk queue size -----------------------------------
 # thread_pool:
 #     bulk:
-#       queue_size: 1000
+#       queue_size: 2000
 
 # ---------------------------------- X-PACK -----------------------------------
 #action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,logs-*,access-*
@@ -61,12 +61,12 @@ node.name: master
 
 # Path backup
 path.repo: ["/opt/repo_snapshots"]
-
+index.codec: best_compression
 
 
 #-------------------------------- AWS S3 configuration--------------------------
-s3.client.default.endpoint: 192.168.1.43:6007
-s3.client.default.protocol: "http"
+# s3.client.default.endpoint: 192.168.1.43:6007
+# s3.client.default.protocol: "http"
 
 
 # ----------------------------------- Memory -----------------------------------
@@ -74,7 +74,7 @@ s3.client.default.protocol: "http"
 # Lock the memory on startup:
 #
 
-bootstrap.memory_lock: true
+#bootstrap.memory_lock: true
 #
 # Make sure that the heap size is set to about half the memory available
 # on the system and that the owner of the process is allowed to use this
