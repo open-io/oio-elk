@@ -34,7 +34,11 @@ BYTES_RECVD (%{NUMBER:bytes_recvd}|-)
 BYTES_SENT (%{NUMBER:bytes_sent}|-)
 
 SWIFT_LOG_SUCCESS %{OIO_HEADER} %{WORD:loglevel}  %{CLIENT_IP} %{REMOTE_ADDR} %{DATAOREMPTY:datetime} %{WORD:request_type} %{REQUEST_PATH:request_path} %{DATAOREMPTY:protocol} %{NUMBER:return_code} %{SERVICE_NAME:referer} %{GREEDYDATA:user_agent} %{DATAOREMPTY} %{BYTES_RECVD} %{BYTES_SENT} %{DATAOREMPTY:client_etag} %{DATA:transaction_id} %{DATAOREMPTY:headers} %{NUMBER:request_time} %{DATAOREMPTY:swift_source} %{DATAOREMPTY:log_info} %{NUMBER:request_start_time} %{NUMBER:request_end_time} %{DATAOREMPTY:policy_index}
-SWIFT_LOG_NOTICE %{OIO_HEADER} %{WORD:loglevel} %{GREEDYDATA:failure_message}
+
+TXN %{DATA}\(txn: %{DATA:transaction_id}\) %{GREEDYDATA}
+PAYLOAD %{GREEDYDATA}#%{WORD}: %{TXN:payload_message}
+
+SWIFT_LOG_NOTICE %{OIO_HEADER} %{WORD:loglevel} %{PAYLOAD:failure_message}
 SWIFT_LOG %{SWIFT_LOG_SUCCESS}|%{SWIFT_LOG_NOTICE}|%{GREEDYDATA}
 
 
