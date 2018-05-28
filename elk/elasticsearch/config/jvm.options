@@ -76,7 +76,7 @@
 
 # permit to access to the value of the keystore list
 -Des.allow_insecure_settings=true
-
+-Des.path.conf=/opt/elasticsearch/config
 ## JDK 8 GC logging
 
 8:-XX:+PrintGCDetails

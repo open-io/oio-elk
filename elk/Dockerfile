@@ -35,7 +35,7 @@ RUN /opt/elasticsearch/bin/elasticsearch-keystore create && \
     chown root:elasticsearch /etc/elasticsearch/elasticsearch.keystore
 
 
-#Installation and configuration of search GUARD
+# Installation and configuration of search GUARD
 # RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.4-compliance-rc1
     # curl -sL https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-tlstool/1.3/search-guard-tlstool-1.3.tar.gz | tar zx -C /opt/elasticsearch/
 # RUN /opt/kibana/bin/kibana-plugin install https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-kibana-plugin/6.2.2-11/search-guard-kibana-plugin-6.2.2-11.zip

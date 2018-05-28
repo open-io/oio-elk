@@ -24,27 +24,23 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
  ```
  $ cd docker-elkf
  ```
-#### Change log directory privileges
- To be able to share the log directory between the openio/sds container and our host machine, it is important to change the rights to allow the different services of the storage solution to be able to modify the log files. Without this it is not possible to launch the containers correctly.
- ```
- sudo find openio/log/ -type d -exec chmod 777 {} \;
- ```
- ```
- sudo find openio/log/ -type f -exec chmod 666 {} \;
- ```
 
 #### increase host's virtual memory
   ```
   $ sudo sysctl -w vm.max_map_count=262144
   ```
-# Run containers
-
+### Run containers
+ * if you just want run  stack ELK
  ```
- $ docker-compose up -d
+ $ docker-compose up -d --build elk
+ ```
+ * if you just want run all containers from docker compose
+ ```
+ $ docker-compose up -d --build
  ```
 
 ___________________________________________________________________________________
-# How manage data retention with Elastic curator
+### How manage data retention with Elastic curator
 
  In order to keep our infrastructures clean and to reduce the response time of requests, it is important to clean our indexes frequently, because they consume a lot of resources (CPU, RAM, disks).
 
@@ -130,9 +126,14 @@ $ gridinit_cmd restart
 
 ```
 
+##### Create un  backup
 
-curl -XPUT 'localhost:9200/_snapshot/oio_logs_backup' -H 'Content-Type: application/json' -d '{ "type": "fs", "settings": {"location": "/opt/repo_snapshots","compress": true}}'
-
+* Filesystem backup
+```
+$ curl -XPUT 'localhost:9200/_snapshot/oio_logs_backup' -H 'Content-Type: application/json' -d '{ "type": "fs", "settings": {"location": "/opt/repo_snapshots","compress": true}}'
+```
+* S3  backup
+```
 curl -XPUT 'localhost:9200/_snapshot/s3_repository' -H 'Content-Type: application/json' -d'
 {
   "type": "s3",
@@ -143,5 +144,4 @@ curl -XPUT 'localhost:9200/_snapshot/s3_repository' -H 'Content-Type: applicatio
     "client": "default"
   }
 }'
-
-curl -XDELETE 'http://localhost:9200/oio-*?pretty'
+```

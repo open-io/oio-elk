@@ -1,0 +1,43 @@
+[
+  {
+    "_id": "4f6ef500-5ff8-11e8-8f0d-59dfae751502",
+    "_type": "search",
+    "_source": {
+      "title": "discover",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"ac290810-5e8d-11e8-a793-65c6ed92f448\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"ac290810-5e8d-11e8-a793-65c6ed92f448\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"range\",\"key\":\"return_code\",\"value\":\"400 to 599\",\"params\":{\"gte\":400,\"lt\":599}},\"range\":{\"return_code\":{\"gte\":400,\"lt\":599}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "d1708020-6019-11e8-8f0d-59dfae751502",
+    "_type": "search",
+    "_source": {
+      "title": "discover failure message",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "message",
+        "failure_message"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"ac290810-5e8d-11e8-a793-65c6ed92f448\",\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"*raise*\",\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"ac290810-5e8d-11e8-a793-65c6ed92f448\",\"type\":\"exists\",\"key\":\"failure_message\",\"value\":\"exists\",\"disabled\":false,\"alias\":null},\"exists\":{\"field\":\"failure_message\"},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  }
+]

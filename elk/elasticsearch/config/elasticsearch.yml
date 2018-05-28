@@ -11,9 +11,9 @@
 # https://www.elastic.co/guide/en/elasticsearch/reference/index.html
 #
 # ---------------------------------- Elasticsearch bulk queue size -----------------------------------
-# thread_pool:
-#     bulk:
-#       queue_size: 2000
+thread_pool:
+    bulk:
+      queue_size: 2000
 
 # ---------------------------------- X-PACK -----------------------------------
 #action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*,logs-*,access-*
@@ -63,6 +63,8 @@ node.name: master
 path.repo: ["/opt/repo_snapshots"]
 index.codec: best_compression
 
+#
+# path.conf:  ["/opt/elasticsearch/config"]
 
 #-------------------------------- AWS S3 configuration--------------------------
 # s3.client.default.endpoint: 192.168.1.43:6007
@@ -72,9 +74,7 @@ index.codec: best_compression
 # ----------------------------------- Memory -----------------------------------
 #
 # Lock the memory on startup:
-#
-
-#bootstrap.memory_lock: true
+bootstrap.memory_lock: true
 #
 # Make sure that the heap size is set to about half the memory available
 # on the system and that the owner of the process is allowed to use this
