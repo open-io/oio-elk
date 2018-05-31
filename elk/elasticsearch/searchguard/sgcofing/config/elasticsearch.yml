@@ -45,12 +45,14 @@ node.name: master
 #
 # Path to log files:
 #
-#path.logs: /var/log/elasticsearch
+#path.logs: /path/to/logs
 
 # Path backup
+path.repo: ["/opt/repo_snapshots"]
 index.codec: best_compression
 
-
+#
+# path.conf:  ["/opt/elasticsearch/config"]
 
 #-------------------------------- AWS S3 configuration--------------------------
 # s3.client.default.endpoint: 192.168.1.43:6007
@@ -60,7 +62,7 @@ index.codec: best_compression
 # ----------------------------------- Memory -----------------------------------
 #
 # Lock the memory on startup:
-#bootstrap.memory_lock: true
+bootstrap.memory_lock: true
 #
 # Make sure that the heap size is set to about half the memory available
 # on the system and that the owner of the process is allowed to use this
@@ -76,9 +78,7 @@ index.codec: best_compression
 #
 # Set a custom port for HTTP:
 #
-http.port: 9200
-http.enabled: true
-# transport.tcp.port: 9300
+#http.port: 9200
 #
 # For more information, consult the network module documentation.
 #
@@ -91,8 +91,7 @@ http.enabled: true
 #
 # Prevent the "split brain" by configuring the majority of nodes (total number of master-eligible nodes / 2 + 1):
 #
-discovery.zen.minimum_master_nodes: 1
-discovery.type: single-node
+#discovery.zen.minimum_master_nodes:
 #
 # For more information, consult the zen discovery module documentation.
 #
@@ -103,3 +102,33 @@ discovery.type: single-node
 #gateway.recover_after_nodes: 3
 #
 # For more information, consult the gateway module documentation.
+#
+# ---------------------------------- Various -----------------------------------
+#
+# Require explicit names when deleting indices:
+#
+#action.destructive_requires_name: true
+
+######## Start Search Guard Demo Configuration ########
+# WARNING: revise all the lines below before you go into production
+searchguard.ssl.transport.pemcert_filepath: esnode.pem
+searchguard.ssl.transport.pemkey_filepath: esnode-key.pem
+searchguard.ssl.transport.pemtrustedcas_filepath: root-ca.pem
+searchguard.ssl.transport.enforce_hostname_verification: false
+searchguard.ssl.http.enabled: true
+searchguard.ssl.http.pemcert_filepath: esnode.pem
+searchguard.ssl.http.pemkey_filepath: esnode-key.pem
+searchguard.ssl.http.pemtrustedcas_filepath: root-ca.pem
+searchguard.allow_unsafe_democertificates: true
+searchguard.allow_default_init_sgindex: true
+searchguard.authcz.admin_dn:
+  - CN=kirk,OU=client,O=client,L=test, C=de
+
+searchguard.audit.type: internal_elasticsearch
+searchguard.enable_snapshot_restore_privilege: true
+searchguard.check_snapshot_restore_write_privileges: true
+searchguard.restapi.roles_enabled: ["sg_all_access"]
+cluster.routing.allocation.disk.threshold_enabled: false
+discovery.zen.minimum_master_nodes: 1
+node.max_local_storage_nodes: 3
+######## End Search Guard Demo Configuration ########
