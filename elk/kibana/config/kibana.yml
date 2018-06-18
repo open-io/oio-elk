@@ -35,7 +35,16 @@
 # To allow connections from remote users, set this parameter to a non-loopback address.
 server.host: "0.0.0.0"
 server.name: kibana
-elasticsearch.url: http://localhost:9200
+elasticsearch.url: https://localhost:9200
+elasticsearch.username: "kibanaserver"
+elasticsearch.password: "kibanaserver"
+searchguard.basicauth.login.brandimage: http://www.openio.io/wp-content/uploads/2017/02/OIO_LOGO_rgb_red.png
+# searchguard.readonly_mode.roles: ["sg_kibana_user"]
+# Disable SSL verification because we use self-signed demo certificates
+elasticsearch.ssl.verificationMode: none
+
+# Whitelist the Search Guard Multi Tenancy Header
+elasticsearch.requestHeadersWhitelist: [ "Authorization", "sgtenant" ]
 # elasticsearch.username: "Kibana"
 # elasticsearch.password: "changeme"
 #xpack.security.enabled: false
