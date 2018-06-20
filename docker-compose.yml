@@ -11,8 +11,7 @@ services:
       - "5044:5044"
     volumes:
       - "./elk/elasticsearch/data:/var/lib/elasticsearch"
-      - "./elk/elasticsearch/config:/opt/elasticsearch/config"
-      - "./elk/elasticsearch/elasticsearch.default:/etc/default/elasticsearch"
+      - "./elk/elasticsearch/config:/etc/elasticsearch"
       - "./elk/elasticsearch/curator:/opt/elasticsearch/curator"
       - "./elk/logstash/config/logstash.yml:/opt/logstash/config/logstash.yml"
       - "./elk/kibana/config:/opt/kibana/config"
@@ -23,8 +22,6 @@ services:
     environment:
       - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
       - "ES_CURATOR_DAYS=${ES_CURATOR_DAYS}"
-      # - "ES_PATH_CONF=/opt/elasticsearch/config"
-
 
   filebeat:
       build:

@@ -1,6 +1,9 @@
 # In this file users, backendroles and hosts can be mapped to Search Guard roles.
 # Permissions for Search Guard roles are configured in sg_roles.yml
 
+sg_customer_acess:
+  backendroles:
+    - toto
 sg_all_access:
   readonly: true
   backendroles:
@@ -9,12 +12,12 @@ sg_all_access:
 sg_logstash:
   backendroles:
     - logstash
-    
+
 sg_kibana_server:
   readonly: true
   users:
     - kibanaserver
-    
+
 sg_kibana_user:
   backendroles:
     - kibanauser

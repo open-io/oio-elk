@@ -39,12 +39,14 @@ elasticsearch.url: https://localhost:9200
 elasticsearch.username: "kibanaserver"
 elasticsearch.password: "kibanaserver"
 searchguard.basicauth.login.brandimage: http://www.openio.io/wp-content/uploads/2017/02/OIO_LOGO_rgb_red.png
-# searchguard.readonly_mode.roles: ["sg_kibana_user"]
+searchguard.readonly_mode.roles: ["sg_customer_acess"]
 # Disable SSL verification because we use self-signed demo certificates
 elasticsearch.ssl.verificationMode: none
 
 # Whitelist the Search Guard Multi Tenancy Header
 elasticsearch.requestHeadersWhitelist: [ "Authorization", "sgtenant" ]
+searchguard.multitenancy.enable_filter: true
+searchguard.multitenancy.tenants.enable_global: true
 # elasticsearch.username: "Kibana"
 # elasticsearch.password: "changeme"
 #xpack.security.enabled: false
@@ -65,7 +67,7 @@ elasticsearch.requestHeadersWhitelist: [ "Authorization", "sgtenant" ]
 
 # Kibana uses an index in Elasticsearch to store saved searches, visualizations and
 # dashboards. Kibana creates a new index if the index doesn’t already exist.
-#kibana.index: ".kibana"
+kibana.index: ".kibana"
 
 # The default application to load.
 #kibana.defaultAppId: "discover"

@@ -100,25 +100,32 @@ discovery.type: single-node
 #
 # For more information, consult the zen discovery module documentation.
 #
-# ---------------------------------- Search GUARD -----------------------------------
+# ---------------------------------- Gateway -----------------------------------
+#
+# Block initial recovery after a full cluster restart until N nodes are started:
+#
+#gateway.recover_after_nodes: 3
+#
+# For more information, consult the gateway module documentation.
+
 
 # WARNING: revise all the lines below before you go into production
-# searchguard.enterprise_modules_enabled: false
-# searchguard.ssl.transport.enabled: true
-# searchguard.ssl.transport.keystore_filepath: sgconfig/node-0-keystore.jks
-# searchguard.ssl.transport.truststore_filepath: sgconfig/truststore.jks
-# searchguard.ssl.transport.enforce_hostname_verification: filtered_alias_mode
-#
-# searchguard.ssl.http.enabled: true
-# searchguard.ssl.http.keystore_filepath: sgconfig/node-0-keystore.jks
-# searchguard.ssl.http.truststore_filepath: sgconfig/truststore.jks
-# searchguard.authcz.admin_dn:
-#  - CN=kirk,OU=client,O=client,L=Test,C=DE
-#
-# searchguard.audit.type: internal_elasticsearch
-# searchguard.enable_snapshot_restore_privilege: true
-# searchguard.check_snapshot_restore_write_privileges: true
-# searchguard.restapi.roles_enabled: ["sg_all_access"]
-# cluster.routing.allocation.disk.threshold_enabled: false
-# node.max_local_storage_nodes: 3
+  searchguard.enterprise_modules_enabled: true
+  searchguard.ssl.transport.enabled: true
+  searchguard.ssl.transport.keystore_filepath: sgconfig/node-0-keystore.jks
+  searchguard.ssl.transport.truststore_filepath: sgconfig/truststore.jks
+  searchguard.ssl.transport.enforce_hostname_verification: false
+
+  searchguard.ssl.http.enabled: true
+  searchguard.ssl.http.keystore_filepath: sgconfig/node-0-keystore.jks
+  searchguard.ssl.http.truststore_filepath: sgconfig/truststore.jks
+  searchguard.authcz.admin_dn:
+   - CN=kirk,OU=client,O=client,L=Test,C=DE
+
+  searchguard.audit.type: internal_elasticsearch
+  searchguard.enable_snapshot_restore_privilege: true
+  searchguard.check_snapshot_restore_write_privileges: true
+  searchguard.restapi.roles_enabled: ["sg_all_access"]
+  cluster.routing.allocation.disk.threshold_enabled: false
+  node.max_local_storage_nodes: 3
 ######## End Search Guard Demo Configuration ########
