@@ -2,30 +2,30 @@
 #-------------------------------SENTINL Configuration----------------------------------
 
 # sentinl:
-  # es:
-  #   host: 'localhost'
-  #   port: 9200
-  #   timefield: '@timestamp'
-  #   default_index: watcher
-  #   type: sentinl-watcher
-  #   alarm_index: watcher_alarms
-  #   alarm_type: sentinl-alarm
-  #   script_type: sentinl-script
-  # settings:
-  #   slack:
-  #     active: true
-  #     username: 'elk-alerting'
-  #     hook: 'https://hooks.slack.com/services/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'
-  #     channel: '#elk-alerting'
-    # email:
-    #     active: true
-    #     host: smtp.gmail.com
-    #     user: pacobadiane17@gmail.com
-    #     password: mdp
-    #     ssl: true
-    # report:
-    #   active: true
-    #   executable_path: '/usr/bin/chromium'
+#   es:
+#     host: 'localhost'
+#     port: 9200
+#     timefield: '@timestamp'
+#     default_index: watcher
+#     type: sentinl-watcher
+#     alarm_index: watcher_alarms
+#     alarm_type: sentinl-alarm
+#     script_type: sentinl-script
+#   settings:
+#     slack:
+#       active: true
+#       username: 'elk-alerting'
+#       hook: 'https://hooks.slack.com/services/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'
+#       channel: '#elk-alerting'
+#     email:
+#         active: true
+#         host: smtp.gmail.com
+#         user: pacobadiane17@gmail.com
+#         password: mdp
+#         ssl: true
+#     report:
+#       active: true
+#       executable_path: '/usr/bin/chromium'
 
 #-----------------------------------------------------------------------------------------------
 #server.port: 5601

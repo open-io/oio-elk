@@ -4,8 +4,6 @@ FROM sebp/elk:624
 RUN /opt/logstash/bin/logstash-plugin install logstash-input-beats
 
 
-
-
 ## Installation de Elasticsearch curator
 RUN apt-get install wget && \
     wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | apt-key add - && \
@@ -17,7 +15,7 @@ RUN apt-get install wget && \
     crontab -u root /var/spool/cron/crontabs/curator
 
 
-
+# create a directory for the log backup
 RUN mkdir /opt/repo_snapshots && \
     chown -R elasticsearch:elasticsearch /opt/repo_snapshots
 
@@ -33,13 +31,11 @@ RUN /opt/elasticsearch/bin/elasticsearch-keystore create && \
 
 
 # Installation and configuration of search GUARD
-# RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.4-22.1 && \
-#       service elasticsearch restart && \
-#       service kibana restart && \
-#       service logstash restart && \
-#     chmod +x /opt/elasticsearch/plugins/search-guard-6/tools/*.sh
 RUN /opt/kibana/bin/kibana-plugin install https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-kibana-plugin/6.2.4-13/search-guard-kibana-plugin-6.2.4-13.zip
+
+RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.4-22.1 && \
+    chmod +x /opt/elasticsearch/plugins/search-guard-6/tools/*.sh
 
 
 ## Install Sentinl
-# RUN opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.3-2/sentinl-v6.2.2.zip
+# RUN opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.3-3/sentinl-v6.2.4.zip

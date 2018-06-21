@@ -109,7 +109,6 @@ sg_kibana_user:
     '*':
       '*':
         - indices:data/read/field_caps*
-      _dls_: '{ "bool": { "must": { "match": { "fields.name_log": "oio-swift" }}}}'
 # For the kibana server
 sg_kibana_server:
   readonly: true
@@ -128,6 +127,18 @@ sg_kibana_server:
     '?monitoring*':
       '*':
         - INDICES_ALL
+    'watcher*':
+      '*':
+       - indices:data/read/search
+       - MANAGE
+       - CREATE_INDEX
+       - INDEX
+       - READ
+       - WRITE
+       - DELETE
+    'oio-*':
+      '*':
+       - indices:data/read/search
 
 # For logstash and beats
 sg_logstash:
