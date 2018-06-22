@@ -85,12 +85,15 @@ sg_readall:
 # For user curator user to have permission to delete indices
 sg_curator:
   cluster:
-  - "CLUSTER_MONITOR"
-  - "CLUSTER_COMPOSITE_OPS"
+  - CLUSTER_MONITOR
+  - CLUSTER_COMPOSITE_OPS
+  - MANAGE_SNAPSHOTS
   indices:
     '*':
       '*':
       - INDICES_ALL
+      - "indices:data/write/index"
+      - "indices:admin/create"
 # Read all and monitor, but no write permissions
 sg_readall_and_monitor:
   cluster:
