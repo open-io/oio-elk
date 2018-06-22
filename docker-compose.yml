@@ -22,7 +22,7 @@ services:
     environment:
       - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
       - "ES_CURATOR_DAYS=${ES_CURATOR_DAYS}"
-      - "ELASTICSEARCH_URL=https://localhost:9200"
+      # - "ELASTICSEARCH_URL=https://localhost:9200"
       - "CLUSTER_NAME=es_cluster"
   filebeat:
       build:

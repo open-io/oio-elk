@@ -5,12 +5,12 @@ sentinl:
   es:
     host: 'localhost'
     port: 9200
-    timefield: '@timestamp'
-    default_index: watcher
-    type: sentinl-watcher
-    alarm_index: watcher_alarms
-    alarm_type: sentinl-alarm
-    script_type: sentinl-script
+    # timefield: '@timestamp'
+    # default_index: watcher
+    # type: sentinl-watcher
+    # alarm_index: watcher_alarms
+    # alarm_type: sentinl-alarm
+    # script_type: sentinl-script
   settings:
     slack:
       active: true
@@ -18,13 +18,16 @@ sentinl:
       hook: 'https://hooks.slack.com/services/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'
       channel: '#elk-alerting'
     email:
-        active: true
-        host: smtp.gmail.com
-        user: pacobadiane17@gmail.com
-        password: mdp
-        ssl: true
+      active: true
+      host: 'localhost'
+    #     active: true
+    #     host: smtp.gmail.com
+    #     user: pacobadiane17@gmail.com
+    #     password: mdp
+    #     ssl: true
     report:
       active: true
+      search_guard: true
       executable_path: '/usr/bin/chromium'
 
 #-----------------------------------------------------------------------------------------------
@@ -36,7 +39,6 @@ elasticsearch.username: "kibanaserver"
 elasticsearch.password: "kibanaserver"
 searchguard.basicauth.login.brandimage: http://www.openio.io/wp-content/uploads/2017/02/OIO_LOGO_rgb_red.png
 searchguard.readonly_mode.roles: ["sg_customer_access"]
-# Disable SSL verification because we use self-signed demo certificates
 elasticsearch.ssl.verificationMode: none
 
 # Whitelist the Search Guard Multi Tenancy Header
