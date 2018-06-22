@@ -37,4 +37,4 @@ RUN /opt/kibana/bin/kibana-plugin install https://search.maven.org/remotecontent
 
 
 ## Install Sentinl
-# RUN /opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.3-3/sentinl-v6.2.4.zip
+RUN /opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.3-3/sentinl-v6.2.4.zip
