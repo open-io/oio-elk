@@ -17,7 +17,7 @@ set -e
 #./gen_node_cert_openssl.sh "/CN=es-node.example.com/OU=SSL/O=Test/L=Test/C=DE" "es-node.example.com" "es-node" changeit capass
 #./gen_node_cert_openssl.sh "/CN=node-4.example.com/OU=SSL/O=Test/L=Test/C=DE" "node-4.example.com" "node-4" changeit capass
 #./gen_client_node_cert.sh spock changeit capass
-#./gen_client_node_cert.sh kirk changeit capass
+./gen_client_node_cert.sh kirk changeit capass
 #./gen_client_node_cert.sh logstash changeit capass
 #./gen_client_node_cert.sh filebeat changeit capass
 #./gen_client_node_cert.sh kibana changeit capass

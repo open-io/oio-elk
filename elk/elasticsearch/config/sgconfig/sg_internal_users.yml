@@ -1,12 +1,19 @@
 # This is the internal user database
 # The hash value is a bcrypt hash and can be generated with plugin/tools/hash.sh
 
-# #password is: kibanaserver
+# #password is: toto
 toto:
   readonly: true
   hash: $2y$12$XTbTwy6VrrRBrQZQO02KOu0yw5R8WZRBp9EqH.YhBbWsWDUOS1c4O
   roles:
     - toto
+
+#password is: curator
+curator:
+  readonly: true
+  hash: $2y$12$vCjmttIIjhLt8aNxSgG8iul0cm4WVU2T6MD/bbmrATtjHv5kYTUii
+  roles:
+    - curator
 #password is: admin
 admin:
   readonly: true

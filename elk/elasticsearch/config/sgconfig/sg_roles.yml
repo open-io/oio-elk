@@ -43,7 +43,7 @@
 # http://docs.search-guard.com/v6/kibana-multi-tenancy
 
 
-sg_customer_acess:
+sg_customer_access:
   readonly: true
   cluster:
     - CLUSTER_COMPOSITE_OPS_RO
@@ -54,13 +54,12 @@ sg_customer_acess:
         - INDEX
         - READ
       _dls_: '{ "bool": {"must_not": [ { "match": { "dashboard.title": "QA" }}, { "match": { "dashboard.title": "Errors" }}, { "match": { "dashboard.title": "services informations" }}, { "match": { "dashboard.title": "OIO-SDS" }} ]}}'
-    '*oio*':
+    'oio-*':
       '*':
-        - INDICES_ALL
+        - READ
       _dls_: '{ "bool": {"must": [ { "match": { "servicetype.keyword": "oioswift"}}]}}'
 
-  tenants:
-     QA: RO
+
 # Allows everything, but no changes to searchguard configuration index
 sg_all_access:
   readonly: true
@@ -83,6 +82,15 @@ sg_readall:
       '*':
         - READ
 
+# For user curator user to have permission to delete indices
+sg_curator:
+  cluster:
+  - "CLUSTER_MONITOR"
+  - "CLUSTER_COMPOSITE_OPS"
+  indices:
+    '*':
+      '*':
+      - INDICES_ALL
 # Read all and monitor, but no write permissions
 sg_readall_and_monitor:
   cluster:

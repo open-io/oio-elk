@@ -1,9 +1,14 @@
 # In this file users, backendroles and hosts can be mapped to Search Guard roles.
 # Permissions for Search Guard roles are configured in sg_roles.yml
 
-sg_customer_acess:
+sg_customer_access:
   backendroles:
     - toto
+
+sg_curator:
+  backendroles:
+    - curator
+
 sg_all_access:
   readonly: true
   backendroles:
