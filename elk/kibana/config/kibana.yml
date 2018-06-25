@@ -5,12 +5,12 @@ sentinl:
   es:
     host: 'localhost'
     port: 9200
-    timefield: '@timestamp'
-    default_index: watcher
-    type: sentinl-watcher
-    alarm_index: watcher_alarms
-    alarm_type: sentinl-alarm
-    script_type: sentinl-script
+    # timefield: '@timestamp'
+    # default_index: watcher
+    # type: sentinl-watcher
+    # alarm_index: watcher_alarms
+    # alarm_type: sentinl-alarm
+    # script_type: sentinl-script
   settings:
     # authentication:
     #   enabled: true
@@ -19,16 +19,16 @@ sentinl:
     slack:
       active: true
       username: 'elk-alerting'
-      hook: 'https://hooks.slack.com/services/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TDT0I'
+      hook: 'https://hooks.slack.com/services/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'
       channel: '#elk-alerting'
-    # email:
-    #   # active: true
-    #   # host: 'localhost'
-    #   active: true
-    #   host: smtp.gmail.com
-    #   user: pacobadiane17@gmail.com
-    #   password: mdp
-    #   ssl: false
+    email:
+      active: true
+      host: 'localhost'
+      # active: true
+      # host: smtp.gmail.com
+      # user:
+      # password:
+      # ssl: false
     report:
       active: true
       authentication:

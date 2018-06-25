@@ -11,7 +11,7 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
  [Installer docker](https://docs.docker.com/install/)   
  [Installer docker-compose ](https://docs.docker.com/compose/install/)
 
-### Setup
+## Setup
 
 #### Clone the repository
 
@@ -33,16 +33,16 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
  $ docker-compose up -d --build
  ```
 
-After the services ( elasticsearch, kibana and logstash) are up, you need the following commands to load security configuration
+
+Search Guard must be initialized after the services ( elasticsearch, kibana and logstash) are started
 
 ```
-$ docker exec docker-elkf_elk bash
-# /etc/elasticsearch/bin/sgadmin_install.sh  
+$ docker-compose exec -T elk /etc/elasticsearch/bin/sgadmin_install.sh  
 ```
 
 ### Logging to kibana
 
-Go to http://[IP_HOST]:5601 and
+Go to `http://[IP_HOST]:5601` and
 
 Login: admin   
 Password: admin
@@ -104,7 +104,7 @@ Run the following command
 # /opt/elastic/plugins/search-guard/tools/hash.sh -p <new password>
 ```
 
-Open the file `$/etc/elasticsearch/sgconfig/sg_roles.yml`and the replace the hash of specific user with the new hash
+Open the file `/etc/elasticsearch/sgconfig/sg_roles.yml`and the replace the hash of specific user with the new hash
 
 ```
 <user_login>:
