@@ -1,42 +1,3 @@
-
-#-------------------------------SENTINL Configuration----------------------------------
-
-sentinl:
-  es:
-    host: 'localhost'
-    port: 9200
-    # timefield: '@timestamp'
-    # default_index: watcher
-    # type: sentinl-watcher
-    # alarm_index: watcher_alarms
-    # alarm_type: sentinl-alarm
-    # script_type: sentinl-script
-  settings:
-    # authentication:
-    #   enabled: true
-    #   username: 'kibanaserver'
-    #   password: 'kibanaserver'
-    slack:
-      active: true
-      username: 'elk-alerting'
-      hook: 'https://hooks.slack.com/services/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'
-      channel: '#elk-alerting'
-    email:
-      active: true
-      host: 'localhost'
-      # active: true
-      # host: smtp.gmail.com
-      # user:
-      # password:
-      # ssl: false
-    report:
-      active: true
-      authentication:
-        enabled: true
-        mode:
-          searchguard: true
-      executable_path: '/usr/bin/chromium'
-
 #-----------------------------------------------------------------------------------------------
 
 server.host: "0.0.0.0"
@@ -50,8 +11,45 @@ elasticsearch.ssl.verificationMode: none
 
 # Whitelist the Search Guard Multi Tenancy Header
 elasticsearch.requestHeadersWhitelist: [ "Authorization", "sgtenant" ]
-searchguard.multitenancy.enable_filter: true
-searchguard.multitenancy.tenants.enable_global: true
-
-
+searchguard.multitenancy.enable_filter: false
+searchguard.multitenancy.tenants.enable_global: false
 kibana.index: ".kibana"
+
+#-------------------------------SENTINL Configuration----------------------------------
+
+# sentinl:
+#   es:
+#     host: 'localhost'
+#     port: 9200
+#     # timefield: '@timestamp'
+#     # default_index: watcher
+#     # type: sentinl-watcher
+#     # alarm_index: watcher_alarms
+#     # alarm_type: sentinl-alarm
+#     # script_type: sentinl-script
+#   settings:
+#     authentication:
+#       enabled: true
+#       username: 'kibanaserver'
+#       password: 'kibanaserver'
+#     # slack:
+#     #   active: true
+#     #   username: 'elk-alerting'
+#     #   hook: ''
+#     #   channel: '#elk-alerting'
+#     email:
+#       active: true
+#       host: 'localhost'
+#       # active: true
+#       # domain: smtp.gmail.com
+#       # port: 587
+#       # user: pacobadiane17@gmail.com
+#       # password:
+#       # ssl: true
+#     # report:
+#     #   active: true
+#     #   authentication:
+#     #     enabled: true
+#     #     mode:
+#     #       searchguard: true
+#     #   executable_path: '/usr/bin/chromium'

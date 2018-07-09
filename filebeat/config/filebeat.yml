@@ -3,6 +3,12 @@
 #-----------------------------Filebeat input --------------------------------
 
 filebeat.prospectors:
+- input_type: log
+  paths:
+      - /var/log/oio/sds/OPENIO/test.log
+  tags: ["json"]
+  fields:
+    name_log: oio-grid
 - type: log
   enabled: true
   paths:
@@ -59,6 +65,8 @@ filebeat.prospectors:
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   hosts: ["192.168.1.43:5044"]
+
+
   #send data with the specific format with codecs
   #codec.format :
   #  string:  '%{[@timestamp]} %{[@message]}'
