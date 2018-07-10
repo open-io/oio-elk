@@ -34,7 +34,3 @@ RUN /opt/elasticsearch/bin/elasticsearch-keystore create && \
 RUN /opt/elasticsearch/bin/elasticsearch-plugin install --batch com.floragunn:search-guard-6:6.2.4-22.1 && \
     chmod +x /opt/elasticsearch/plugins/search-guard-6/tools/*.sh
 RUN /opt/kibana/bin/kibana-plugin install https://search.maven.org/remotecontent?filepath=com/floragunn/search-guard-kibana-plugin/6.2.4-13/search-guard-kibana-plugin-6.2.4-13.zip
-
-
-## Install Sentinl
-# RUN /opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.2.3-3/sentinl-v6.2.4.zip
