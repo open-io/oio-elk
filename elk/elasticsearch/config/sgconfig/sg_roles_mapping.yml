@@ -3,7 +3,7 @@
 
 sg_customer_access:
   backendroles:
-    - toto
+    - openio
 
 sg_curator:
   backendroles:
@@ -22,21 +22,3 @@ sg_kibana_server:
   readonly: true
   users:
     - kibanaserver
-
-sg_kibana_user:
-  backendroles:
-    - kibanauser
-
-sg_readall:
-  readonly: true
-  backendroles:
-    - readall
-
-sg_manage_snapshots:
-  readonly: true
-  backendroles:
-    - snapshotrestore
-
-sg_own_index:
-  users:
-    - '*'
