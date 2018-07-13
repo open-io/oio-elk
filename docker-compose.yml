@@ -20,9 +20,8 @@ services:
     networks:
       - net
     environment:
-      - "ES_JAVA_OPTS=${ES_JAVA_OPTS}"
-      - "ES_CURATOR_DAYS=${ES_CURATOR_DAYS}"
-      - "CLUSTER_NAME=es_cluster"
+      - "ES_HEAP_SIZE=${ES_HEAP_SIZE}"
+      - "CLUSTER_NAME=${ES_CLUSTER_NAME}"
   filebeat:
       build:
         context: ./filebeat

@@ -15,6 +15,6 @@ actions:
       source: field_stats
       field: '@timestamp'
       unit: days
-      unit_count: ${ES_CURATOR_DAYS}
+      unit_count: 7
       direction: older
 ...
