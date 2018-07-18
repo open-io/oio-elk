@@ -21,6 +21,7 @@ services:
       - net
     environment:
       - "ES_HEAP_SIZE=${ES_HEAP_SIZE}"
+      - "LS_HEAP_SIZE=${LS_HEAP_SIZE}"
       - "CLUSTER_NAME=${ES_CLUSTER_NAME}"
   filebeat:
       build:
@@ -42,25 +43,7 @@ services:
     restart: always
     networks:
       - net
-    # environment:
-    #   - "KEYSTONE_ENABLED=true"
-    #   - "KEYSTONE_URI=${IPADDR}:5000"
-    #   - "KEYSTONE_URL=${IPADDR}:35357"
-    #   - "REGION=us-east-1"
 
-  # openstack-keystone:
-  #   build:
-  #     context: ./openstack
-  #   ports:
-  #     - "5000:5000"
-  #     - "35357:35357"
-  #   restart: always
-  #   networks:
-  #     - net
-  #   environment:
-  #     - "IPADDR=${IPADDR}"
-  #     - "OS_IDENTITY_SERVICE_REGION=us-east-1"
-  #     - "OS_OBJECTSTORE_SERVICE_REGION=us-east-1"
 
 networks:
   net:
