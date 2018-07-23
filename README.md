@@ -1,7 +1,7 @@
 Docker ELK + FILEBEAT+ OPENIO/SDS    
 ----------------------
 
-> les diiférentes versions des outils utilisés:  
+> Tools versions:  
 - ELK : version 6.2.4   
 - Filebeat : Version 6.2.4  
 - Openio/sds: version 17.04
@@ -13,28 +13,33 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
 
 ## Setup
 
-#### Clone the repository
+### Clone the repository
 
  ```
- $ git clone https://github.com/papebadiane/docker-elkf && cd docker-elkf
+ $ git clone https://github.com/papebadiane/oio-elk && cd oio-elk
  ```
 
-#### increase host's virtual memory
+###  Increase host's virtual memory
   ```
   $ sudo sysctl -w vm.max_map_count=262144
   ```
-### Run containers
- * if you just want  to run  only the container ELK, you need to run the following command
+### Run container(s)
+
+#### a. Run ELK container
  ```
- $ docker-compose up -d --build elk
- ```
- * if you just want run all containers (elk, openio-sds, Filebeat) for a local test, you need to run the following command
- ```
- $ docker-compose up -d --build
+ $ docker-compose up  --build elk
  ```
 
+#### b. Test all the stack (elk + openio-sds_17.04 + Filebeat)
 
-Search Guard must be initialized after the services ( elasticsearch, kibana and logstash) are started
+If you want test ELK-6.2.4 + openio-sds_17.04 + Filebeat-6.2.4 in local, you just need to run the following command:
+ ```
+ $ docker-compose up --build
+ ```
+
+### Set cluster's access control
+
+After that container ElK startup, you will need to inialise the access control of the cluster.
 
 ```
 $ docker-compose exec -T elk /etc/elasticsearch/bin/sgadmin_install.sh  
@@ -44,8 +49,8 @@ $ docker-compose exec -T elk /etc/elasticsearch/bin/sgadmin_install.sh
 
 Go to `http://[IP_HOST]:5601` and
 
-Login: admin   
-Password: admin
+Login: openio   
+Password: openio
 __________________________________________________________________________________
 ## Configuration
 
