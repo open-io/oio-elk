@@ -21,6 +21,7 @@ filebeat.prospectors:
   paths:
     - /var/log/oio/sds/OPENIO/*/*.access*
     - /var/log/oio/sds/OPENIO/rawx-*/*-access.log*
+    - /var/log/oio/sds/OPENIO/ecd-*/*-access.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-access
