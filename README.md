@@ -8,15 +8,15 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
 
 
 #### Requirement
- [Installer docker](https://docs.docker.com/install/)   
- [Installer docker-compose ](https://docs.docker.com/compose/install/)
+ [Install docker](https://docs.docker.com/install/)   
+ [Install docker-compose](https://docs.docker.com/compose/install/)
 
 ## Setup
 
 ### Clone the repository
 
  ```
- $ git clone https://github.com/papebadiane/oio-elk && cd oio-elk
+ $ git clone https://github.com/openio/oio-elk && cd oio-elk
  ```
 
 ###  Increase host's virtual memory
@@ -32,7 +32,7 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
 
 #### b. Test all the stack (elk + openio-sds_17.04 + Filebeat)
 
-If you want test ELK-6.2.4 + openio-sds_17.04 + Filebeat-6.2.4 in local, you just need to run the following command:
+If you want to test ELK-6.2.4 + openio-sds_17.04 + Filebeat-6.2.4 in local, you just need to run the following command:
  ```
  $ docker-compose up --build
  ```
