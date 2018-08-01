@@ -1,3 +1,4 @@
 elk/elasticsearch/data/*
 *.log
 *.access
+openio/log/*
