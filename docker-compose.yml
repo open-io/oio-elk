@@ -28,7 +28,7 @@ services:
         context: ./filebeat
       volumes:
         - "./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml"
-        - "./openio/log/oio/sds/OPENIO:/var/log/oio/sds/OPENIO"
+        - "./openio/log/oio/sds:/var/log/oio/sds"
       restart: always
       networks:
         - net

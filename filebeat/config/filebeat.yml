@@ -12,72 +12,57 @@ filebeat.prospectors:
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/oioswift-*/oioswift-*.log*
+    - /var/log/oio/sds/OPENIO*/oioswift-*/oioswift-*.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-swift
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/*/*.access*
-    - /var/log/oio/sds/OPENIO/rawx-*/*-access.log*
-    - /var/log/oio/sds/OPENIO/ecd-*/*-access.log*
+    - /var/log/oio/sds/OPENIO*/*/*.access*
+    - /var/log/oio/sds/OPENIO*/rawx-*/*-access.log*
+    - /var/log/oio/sds/OPENIO*/ecd-*/*-access.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-access
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/meta*/*.log*
-    - /var/log/oio/sds/OPENIO/conscience*/*.log*
-    - /var/log/oio/sds/OPENIO/oioproxy-*/*.log*
-    - /var/log/oio/sds/OPENIO/oio-event-agent*/*.log*
+    - /var/log/oio/sds/OPENIO*/meta*/*.log*
+    - /var/log/oio/sds/OPENIO*/conscience*/*.log*
+    - /var/log/oio/sds/OPENIO*/oioproxy-*/*.log*
+    - /var/log/oio/sds/OPENIO*/oio-event-agent*/*.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-logs
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/oio-blob-indexer-*/*.log*
+    - /var/log/oio/sds/OPENIO*/oio-blob-indexer-*/*.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-blob-indexer
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/account-*/*.log*
+    - /var/log/oio/sds/OPENIO*/account-*/*.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-account
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/redis-*/*.log*
+    - /var/log/oio/sds/OPENIO*/redis-*/*.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-redis
 - type: log
   enabled: true
   paths:
-    - /var/log/oio/sds/OPENIO/*/*-errors.log*
+    - /var/log/oio/sds/OPENIO*/*/*-errors.log*
   exclude_files: ['\.gz$']
   fields:
     name_log: oio-errors
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   hosts: ["192.168.1.43:5044"]
-
-
-  #send data with the specific format with codecs
-  #codec.format :
-  #  string:  '%{[@timestamp]} %{[@message]}'
-
-  # Optional SSL. By default is off.
-  # List of root certificates for HTTPS server verifications
-  #ssl.certificate_authorities: ["/etc/pki/tls/certs/logstash-beats.crt"]
-
-  # Certificate for SSL client authentication
-  #ssl.certificate: "/etc/pki/client/cert.pem"
-
-  # Client Certificate Key
-  #ssl.key: "/etc/pki/client/cert.key"
