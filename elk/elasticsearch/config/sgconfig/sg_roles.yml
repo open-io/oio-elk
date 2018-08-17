@@ -89,7 +89,7 @@ sg_curator:
   - CLUSTER_COMPOSITE_OPS
   - MANAGE_SNAPSHOTS
   indices:
-    '*':
+    'oio-*':
       '*':
       - INDICES_ALL
       - "indices:data/write/index"

@@ -5,7 +5,7 @@ server.name: kibana
 elasticsearch.url: http://localhost:9200
 elasticsearch.username: "kibanaserver"
 elasticsearch.password: "kibanaserver"
-searchguard.basicauth.login.brandimage: http://www.openio.io/wp-content/uploads/2017/02/OIO_LOGO_rgb_red.png
+searchguard.basicauth.login.brandimage: "http://www.openio.io/wp-content/uploads/2017/02/OIO_LOGO_rgb_red.png"
 searchguard.readonly_mode.roles: ["sg_customer_access"]
 elasticsearch.ssl.verificationMode: none
 
