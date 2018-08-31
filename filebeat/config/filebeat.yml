@@ -65,4 +65,4 @@ filebeat.prospectors:
     name_log: oio-errors
 #----------------------------- Logstash output --------------------------------
 output.logstash:
-  hosts: ["192.168.1.43:5044"]
+  hosts: ["172.17.0.2:5044"]

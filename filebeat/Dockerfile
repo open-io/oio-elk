@@ -5,4 +5,5 @@ RUN mkdir -p /var/log/oio/sds/OPENIO
 
 RUN chown filebeat /usr/share/filebeat/filebeat.yml
 RUN chmod go-w /usr/share/filebeat/filebeat.yml
+RUN yum install net-tools -y
 USER filebeat

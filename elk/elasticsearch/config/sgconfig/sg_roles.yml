@@ -53,7 +53,7 @@ sg_customer_access:
         - MANAGE
         - INDEX
         - READ
-      _dls_: '{ "bool": {"must_not": [ { "match": { "dashboard.title": "QA" }}, { "match": { "dashboard.title": "Errors" }}, { "match": { "dashboard.title": "services informations" }}, { "match": { "dashboard.title": "OIO-SDS" }} ]}}'
+      _dls_: '{ "bool": {"must_not": [ { "match": { "dashboard.title": "QA" }}, { "match": { "dashboard.title": "Errors" }}, { "match": { "dashboard.title": "services informations" }}, { "match": { "dashboard.title": "OIO-SDS" }},, { "match": { "dashboard.title": "Developer Dashboard" }}, { "match": { "dashboard.title": "List of failure log" }}, { "match": { "dashboard.title": "Request time evolution per method and per service" }} ]}}'
     'oio-*':
       '*':
         - READ
