@@ -16,7 +16,7 @@ Docker ELK + FILEBEAT+ OPENIO/SDS
 ### Clone the repository
 
  ```
- $ git clone https://github.com/openio/oio-elk && cd oio-elk
+ $ git clone https://github.com/open-io/oio-elk && cd oio-elk
  ```
 
 ###  Increase host's virtual memory
